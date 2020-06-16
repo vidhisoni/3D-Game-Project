@@ -1,0 +1,32 @@
+{
+  "Credits": [
+    {
+      "Name": "CreditQuad",
+      "DataFile": "Billboard",
+      "Transform": {
+        "Scale": [ 2.0, 2.0, 2.0 ],
+        "Translate": [ 0.0, 0.0, 0.0 ],
+        "RotationAngles": [ 0.0, 0.0, 0.0 ]
+      },
+      "ModelComponent": {
+        "Model": "Quad",
+        "Renderable": true,
+        "CastsShadow": false,
+        "IsBillboard": false,
+        "IgnoreCamera": true
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\CreditSequence.py" ],
+        "always-run": true
+      }
+    },
+    {
+      "DataFile": "MusicObject",
+      "ScriptComponent": {
+        "scripts": [
+          ".\\Resources\\Scripts\\Credits.py"
+        ]
+      }
+    }
+  ]
+}

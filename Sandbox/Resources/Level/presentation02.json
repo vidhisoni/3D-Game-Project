@@ -1,0 +1,815 @@
+{
+  "Presentation000": [
+    { "Comment": "____________________________Player___________________________" },
+    {
+
+      "Comment": "MAIN CHARACTER",
+      "DataFile": "PlayerObject",
+      "ModelComponent": {
+        "Model": "Mannequin",
+        "Material": "Blue"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 2.0, 2.0 ],
+        "Translate": [ 1.0, 6.0, 10.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Player",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 1.0
+      }
+    },
+    { "Comment": "____________________________BASIC SCENARIO____________________________" },
+    {
+      "Comment": "0.-TEAM PRESENTATION WALL",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Presentation",
+        "Renderable": true
+      },
+      "Transform": {
+        "Scale": [ 10.0, 6.0, 0.01 ],
+        "Translate": [ 0.0, 3.0, -5.9 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 1.1,
+        "mCoeffDynamicFriction": 1.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      }
+    },
+    {
+      "Comment": "1.- Common floor",
+
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Ground"
+      },
+      "Transform": {
+        "Scale": [ 100.0, 1.0, 140.0 ],
+        "Translate": [ 0.0, -0.5, -50.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 4.0,
+        "mCoeffDynamicFriction": 4.0
+      },
+      "Body": {
+        "mUseGravity": false,
+        "mMass": 0.0
+      }
+    },
+    {
+      "Comment": "2.- SLIDDING FLOOR ",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Orange"
+      },
+      "Transform": {
+        "Scale": [ 8.0, 0.1, 20.0 ],
+        "Translate": [ -0.0, 0.0, 5.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.0,
+        "mCoeffDynamicFriction": 0.0,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      }
+    },
+    {
+      "Comment": "4.-INIT WALL",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Purple",
+        "Renderable": true
+      },
+      "Transform": {
+        "Scale": [ 32.0, 6.0, 0.1 ],
+        "Translate": [ 0.0, 3.0, -6.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      }
+    },
+    {
+      "Comment": "5.-LEFT WALL",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Purple"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 20.0, 100.0 ],
+        "Translate": [ -16.0, 10.0, -40.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      }
+    },
+    {
+      "Comment": "6.- RIGHT WALL",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Purple"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 20.0, 100.0 ],
+        "Translate": [ 16.0, 10.0, -40.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      }
+    },
+
+    { "Comment": "____________________________ACTIONS____________________________" },
+
+
+    { "Comment": "____________________________PHYSICS____________________________" },
+    {
+      "Comment": "Button Physics",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Red"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 0.2, 2.0 ],
+        "Translate": [ -8.0, 0.0, 0.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      }
+    },
+    {
+      "Comment": "3.-HELPING BOX",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Green"
+      },
+      "Transform": {
+        "Scale": [ 4.0, 4.0, 4.0 ],
+        "Translate": [ -14.0, 6.0, -1.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "MovingBox",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 5.1,
+        "mCoeffDynamicFriction": 5.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 1.0
+      }
+    },
+
+    { "Comment": "____________________________AUDIO____________________________" },
+    {
+      "Comment": "Button Audio - Incidental",
+      "DataFile": "ButtonObject",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Red"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 0.2, 2.0 ],
+        "Translate": [ -13.0, 0.0, -31.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\basic_audio_button.py" ]
+      }
+    },
+
+    {
+      "Comment": "Button Audio - InfiniteLoop",
+      "DataFile": "ButtonObject",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Red"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 0.2, 2.0 ],
+        "Translate": [ -7.0, 0.0, -35.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\scene_music_button.py" ]
+
+      }
+    },
+
+    {
+      "Comment": "7.-AUDIO HELPING BOX",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Yellow"
+      },
+      "Transform": {
+        "Scale": [ 1.0, 1.0, 1.0 ],
+        "Translate": [ -10.0, 0.5, -40.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      }
+    },
+    { "Comment": "____________________________GRAPHICS____________________________" },
+    {
+      "Comment": "Button Graphics - IDLE",
+      "DataFile": "ButtonObject",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Red"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 0.2, 2.0 ],
+        "Translate": [ 7.0, 0.0, -41.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\idle_animation_button.py" ]
+      }
+    },
+    {
+      "Comment": "Button Graphics - Walk",
+      "DataFile": "ButtonObject",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Red"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 0.2, 2.0 ],
+        "Translate": [ 10.0, 0.0, -42.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\walk_animation_button.py" ]
+      }
+    },
+    {
+      "Comment": "Button Graphics - JUMP",
+      "DataFile": "ButtonObject",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Red"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 0.2, 2.0 ],
+        "Translate": [ 13.0, 0.0, -43.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\jump_animation_button.py" ]
+      }
+    },
+    {
+      "Comment": "Button Graphics - FX1",
+      "DataFile": "ButtonObject",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Red"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 0.2, 2.0 ],
+        "Translate": [ 11.0, 0.0, -47.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\random_material_button.py" ]
+      }
+    },
+    {
+      "Comment": "GRAPHICS BOX REFERENCE",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Yellow"
+      },
+      "Transform": {
+        "Scale": [ 1.0, 1.0, 1.0 ],
+        "Translate": [ 9.5, 0.5, -50.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      }
+    },
+    {
+      "Comment": "GRAPHICS Model REFERENCE",
+      "DataFile": "Enemy",
+      "Transform": {
+        "Scale": [ 3.0, 3.0, 3.0 ],
+        "Translate": [ 9.5, 1.1, -50.0 ],
+        "RotationAngles": [ -90.0, 0.0, 0.0 ]
+      }
+    },
+
+    {
+      "Comment": "GRAPHICS WEX LOCAL LIGHT",
+      "DataFile": "Light",
+      "Transform": {
+        "Translate": [ 8.0, 0.5, -50.0 ]
+      },
+      "LocalLightComponent": {
+        "LightColor": [ 2.0, 1.0, 4.0 ],
+        "ClapOn": true
+      }
+    },
+    {
+      "Comment": "GRAPHICS QUAS LOCAL LIGHT",
+      "DataFile": "Light",
+      "Transform": {
+        "Translate": [ 11.0, 0.5, -50.0 ]
+      },
+      "LocalLightComponent": {
+        "LightColor": [ 0.0, 1.0, 4.0 ],
+        "ClapOn": true
+      }
+    },
+    {
+      "Comment": "GRAPHICS EXORT LOCAL LIGHT",
+      "DataFile": "Light",
+      "Transform": {
+        "Translate": [ 9.5, 0.5, -48.0 ]
+      },
+      "LocalLightComponent": {
+        "LightColor": [ 2.0, 1.0, 0.0 ],
+        "ClapOn": true
+      }
+    },
+
+    {
+      "Comment": "GRAPHICS GLOBAL SHOWCASE LIGHT",
+      "DataFile": "DRLight",
+      "Transform": {
+        "Translate": [ 5.0, 5.0, -48.0 ]
+      },
+      "DRLightComponent": {
+        "LookPosition": [ 9.0, 0.0, -50.0 ],
+        "LightColor": [ 1.0, 1.0, 1.0 ]
+      }
+    },
+
+    { "Comment": "____________________________PROCEDURAL TEXTURING___________________________" },
+
+    {
+      "Comment": "Button Procedural - Tex1",
+      "DataFile": "ButtonObject",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Red"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 0.2, 2.0 ],
+        "Translate": [ -13.0, 0.0, -59.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\procedural_texture_button.py" ]
+      }
+    },
+
+    {
+      "Comment": "PROCEDURAL BOX REFERENCE",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Noise0"
+      },
+      "Transform": {
+        "Scale": [ 6.0, 6.0, 2.0 ],
+        "Translate": [ -10.0, 3.0, -65.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      }
+    },
+    { "Comment": "____________________________PARTICLES___________________________" },
+
+    {
+      "Comment": "Button Particles - 1 - Basic fountain",
+      "DataFile": "ButtonObject",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Red"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 0.2, 2.0 ],
+        "Translate": [ 7.0, 0.0, -68.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\basic_particle_button.py" ]
+      }
+    },
+
+    {
+      "Comment": "Button Particles - 2 -  Sphere",
+      "DataFile": "ButtonObject",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Red"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 0.2, 2.0 ],
+        "Translate": [ 10.0, 0.0, -66.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\sphere_particle_button.py" ]
+      }
+    },
+
+    {
+      "Comment": "Button Particles - 3",
+      "DataFile": "ButtonObject",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Orange"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 0.2, 2.0 ],
+        "Translate": [ 13.0, 0.0, -64.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\cube_particle_button.py" ]
+      }
+    },
+
+    {
+      "Comment": "Particle BOX REFERENCE",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Yellow"
+      },
+      "Transform": {
+        "Scale": [ 0.5, 3.0, 0.5 ],
+        "Translate": [ 7.0, 1.5, -72.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      }
+    },
+
+    {
+      "Comment": "PROCEDURAL BOX REFERENCE",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Yellow"
+      },
+      "Transform": {
+        "Scale": [ 0.5, 3.0, 0.5 ],
+        "Translate": [ 10.0, 1.5, -72.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      }
+    },
+
+    {
+      "Comment": "Particle BOX REFERENCE",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Yellow"
+      },
+      "Transform": {
+        "Scale": [ 0.5, 3.0, 0.5 ],
+        "Translate": [ 13.0, 1.5, -72.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      }
+    },
+
+    { "Comment": "____________________________PARTICLE POSITIONS___________________________" },
+    { "Comment": "( 7.0, 3.0, -72.0 ),( 10.0, 3.0, -72.0 ),( 13.0, 3.0, -72.0" },
+
+    { "Comment": "____________________________ENDING ELEMENTS___________________________" },
+
+    {
+      "Comment": "Button ENDING",
+      "DataFile": "ButtonObject",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Red"
+      },
+      "Transform": {
+        "Scale": [ 3.0, 0.2, 3.0 ],
+        "Translate": [ 0.0, 0.0, -80.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\final_button.py" ]
+      },
+      "ParticlesComponent": {
+        "PartNumber": 5000.0,
+        "PartLife": 1.0,
+        "PartPos": [ 0.0, 3.0, -83.0 ],
+        "MainDir": [ 0.0, 5.0, 0.0 ],
+        "ParticleType": "Sphere",
+        "left": true
+      }
+    },
+    {
+      "DataFile": "Particle",
+      "ParticlesComponent": {
+        "PartNumber": 3000.0,
+        "PartLife": 1.0,
+        "PartPos": [ -5.0, 3.0, -80.0 ],
+        "MainDir": [ 0.0, 5.0, 0.0 ],
+        "rightLim": 3,
+        "ParticleType": "Default"
+      }
+    },
+    {
+      "DataFile": "Particle",
+      "ParticlesComponent": {
+        "PartNumber": 3000.0,
+        "PartLife": 1.0,
+        "PartPos": [ 5.0, 3.0, -80.0 ],
+        "MainDir": [ 0.0, 5.0, 0.0 ],
+        "leftLim": -3,
+        "ParticleType": "Default"
+      }
+    },
+    {
+      "DataFile": "Particle",
+      "ParticlesComponent": {
+        "PartNumber": 2000.0,
+        "PartLife": 1.0,
+        "PartPos": [ 5.0, 3.0, -80.0 ],
+        "MainDir": [ 0.0, -5.0, 0.0 ],
+        "ParticleType": "Cube"
+      }
+    },
+    {
+      "DataFile": "Particle",
+      "ParticlesComponent": {
+        "PartNumber": 2000.0,
+        "PartLife": 1.0,
+        "PartPos": [ -5.0, 3.0, -80.0 ],
+        "MainDir": [ 0.0, -5.0, 0.0 ],
+        "ParticleType": "Cube"
+      }
+    },
+    {
+      "DataFile": "DRLight",
+      "Transform": {
+        "Translate": [
+          0.0,
+          63.0,
+          71.0
+        ]
+      }
+    },
+    {
+      "DataFile": "Skybox"
+    },
+    {
+      "DataFile": "Camera"
+    }
+  ]
+}

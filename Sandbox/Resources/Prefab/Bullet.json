@@ -1,0 +1,42 @@
+{
+  "Type": "Bullet",
+  "Transform": {
+    "Scale": [ 0.5, 0.5, 0.5 ],
+    "Translate": [ 0.0, 0.0, 0.0 ],
+    "RotationAngles": [ 0.0, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "Cube",
+    "Material": "Red",
+    "Renderable": true
+  },
+  "Body": {
+    "mPos": 0.0,
+    "mPrevPos": 0.0,
+    "mVel": 0.0,
+    "mAcc": 0.0,
+    "mTotalForce": 0.0,
+    "constantVelocity": 0.0,
+    "applyFriction": true,
+    "isConstantVelocitySet": true,
+    "constrainX": true,
+    "constrainY": true,
+    "constrainZ": true,
+    "mUseGravity": false
+  },
+  "Collider": {
+    "mIsTrigger": true,
+    "mLType": "BULLET",
+    "mShape": "AABB",
+    "mCoeffStaticFriction": 1.0,
+    "mCoeffDynamicFriction": 1.0
+  },
+  "BulletComp": {},
+  "Audio": {
+    "mSoundName": "ShotBurst.wav",
+    "mis3D": true,
+    "mVolume": 0.2,
+    "mStartPlaying": false
+  }
+
+}

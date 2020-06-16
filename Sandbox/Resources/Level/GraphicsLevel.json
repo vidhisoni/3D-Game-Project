@@ -1,0 +1,153 @@
+﻿{
+  "GraphicsLevel": [
+    {
+      "DataFile": "Object",
+      "Animator": {
+        "DefaultAffineState": "None",
+        "DefaultSkeletalState": "None"
+      }
+    },
+    {
+      "DataFile": "Object",
+      "ModelComponent": {
+        "Model": "Object",
+        "MeshMaterials": [ "Red" ]
+      },
+      "Transform": {
+        "Translate": [
+          2.0,
+          0.0,
+          0.0
+        ]
+      },
+      "Animator": {
+        "DefaultAffineState": "None",
+        "DefaultSkeletalState": "None"
+      }
+    },
+    {
+      "DataFile": "Object",
+      "ModelComponent": {
+        "Model": "Cube",
+        "MeshMaterials": [ "Orange" ]
+      },
+      "Transform": {
+        "Translate": [
+          2.0,
+          0.0,
+          2.0
+        ]
+      },
+      "Animator": {
+        "DefaultAffineState": "None",
+        "DefaultSkeletalState": "None"
+      }
+    },
+    {
+      "DataFile": "Object",
+      "ModelComponent": {
+        "Model": "Tetrahedron",
+        "MeshMaterials": [ "Yellow" ]
+      },
+      "Transform": {
+        "Translate": [
+          -2.0,
+          0.0,
+          0.0
+        ]
+      },
+      "Animator": {
+        "DefaultAffineState": "None",
+        "DefaultSkeletalState": "None"
+      }
+    },
+    {
+      "DataFile": "Object",
+      "ModelComponent": {
+        "Model": "Octahedron",
+        "MeshMaterials": [ "Green" ]
+      },
+      "Transform": {
+        "Translate": [
+          0.0,
+          0.0,
+          2.0
+        ]
+      },
+      "Animator": {
+        "DefaultAffineState": "None",
+        "DefaultSkeletalState": "None"
+      }
+    },
+    {
+      "DataFile": "PlayerObject",
+      "ModelComponent": {
+        "Model": "Mannequin",
+        "MeshMaterials": [ "Blue" ]
+      },
+      "Transform": {
+        "Translate": [
+          1.0,
+          -1.0,
+          6.0
+        ],
+        "RotationAngles": [
+          -90.0,
+          0.0,
+          0.0
+        ]
+      },
+      "Animator": {
+        "DefaultAffineState": "None"
+      }
+    },
+    {
+      "DataFile": "Light",
+      "Transform": {
+        "Translate": [ 5.0, -1.0, 5.0 ]
+      },
+      "LocalLightComponent": {
+        "LightColor": [ 2.0, 1.0, 4.0 ]
+      }
+    },
+    {
+      "DataFile": "Light",
+      "Transform": {
+        "Translate": [ 5.0, -1.0, 1.0 ]
+      },
+      "LocalLightComponent": {
+        "LightColor": [ 0.0, 1.0, 4.0 ]
+      }
+    },
+    {
+      "DataFile": "Light",
+      "Transform": {
+        "Translate": [ 1.0, -1.0, 5.0 ]
+      },
+      "LocalLightComponent": {
+        "LightColor": [ 2.0, 1.0, 0.0 ]
+      }
+    },
+    {
+      "DataFile": "DRLight"
+    },
+    {
+      "DataFile": "DRLight",
+      "Transform": {
+        "Translate": [ -2.0, 5.0, 0.0 ]
+      }
+    },
+    {
+      "DataFile": "Ground"
+    },
+    {
+      "DataFile": "Skybox"
+    },
+    {
+      "DataFile": "Particle"
+    },
+    {
+      "DataFile": "Camera"
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+{
+	"Animator" : 
+	{
+		"AffineStates" : [],
+		"DefaultAffineState" : "None",
+		"DefaultSkeletalState" : "None",
+		"SkeletalStates" : {}
+	},
+	"Children" : 
+	[
+		{
+			"Animator" : 
+			{
+				"AffineStates" : [],
+				"DefaultAffineState" : "None",
+				"DefaultSkeletalState" : "None",
+				"SkeletalStates" : {}
+			},
+			"DataFile" : "Background",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"CastsShadow" : false,
+				"IsBillboard" : false,
+				"IsUI" : false,
+				"Material" : "Black",
+				"MeshMaterials" : 
+				[
+					"None"
+				],
+				"Model" : "Cube",
+				"Renderable" : true
+			},
+			"Name" : "Background",
+			"Transform" : 
+			{
+				"RotationAngles" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Scale" : 
+				[
+					0.95999991893768311,
+					0.96000003814697266,
+					0.95999979972839355
+				],
+				"Translate" : 
+				[
+					0.10699462890625,
+					0.0,
+					1.9073486328125e-06
+				]
+			},
+			"Type" : "Background"
+		},
+		{
+			"Animator" : 
+			{
+				"AffineStates" : [],
+				"DefaultAffineState" : "None",
+				"DefaultSkeletalState" : "None",
+				"SkeletalStates" : {}
+			},
+			"DataFile" : "Background",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"CastsShadow" : false,
+				"IsBillboard" : false,
+				"IsUI" : false,
+				"Material" : "T01",
+				"MeshMaterials" : 
+				[
+					"None"
+				],
+				"Model" : "Cube",
+				"Renderable" : true
+			},
+			"Name" : "T01",
+			"Transform" : 
+			{
+				"RotationAngles" : 
+				[
+					88.850814819335938,
+					-0.0,
+					0.0
+				],
+				"Scale" : 
+				[
+					0.16556484997272491,
+					0.50825780630111694,
+					0.11339477449655533
+				],
+				"Translate" : 
+				[
+					1.8279190063476563,
+					0.24727851152420044,
+					0.37107366323471069
+				]
+			},
+			"Type" : "Background"
+		},
+		{
+			"Animator" : 
+			{
+				"AffineStates" : [],
+				"DefaultAffineState" : "None",
+				"DefaultSkeletalState" : "None",
+				"SkeletalStates" : {}
+			},
+			"DataFile" : "Background",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"CastsShadow" : false,
+				"IsBillboard" : false,
+				"IsUI" : false,
+				"Material" : "T02",
+				"MeshMaterials" : 
+				[
+					"None"
+				],
+				"Model" : "Cube",
+				"Renderable" : true
+			},
+			"Name" : "T02",
+			"Transform" : 
+			{
+				"RotationAngles" : 
+				[
+					88.850814819335938,
+					-0.0,
+					0.0
+				],
+				"Scale" : 
+				[
+					0.16556484997272491,
+					0.50825780630111694,
+					0.11339477449655533
+				],
+				"Translate" : 
+				[
+					1.8279190063476563,
+					0.19842648506164551,
+					0.20264746248722076
+				]
+			},
+			"Type" : "Background"
+		},
+		{
+			"Animator" : 
+			{
+				"AffineStates" : [],
+				"DefaultAffineState" : "None",
+				"DefaultSkeletalState" : "None",
+				"SkeletalStates" : {}
+			},
+			"DataFile" : "Background",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"CastsShadow" : false,
+				"IsBillboard" : false,
+				"IsUI" : false,
+				"Material" : "T03",
+				"MeshMaterials" : 
+				[
+					"None"
+				],
+				"Model" : "Cube",
+				"Renderable" : true
+			},
+			"Name" : "T03",
+			"Transform" : 
+			{
+				"RotationAngles" : 
+				[
+					88.850814819335938,
+					-0.0,
+					0.0
+				],
+				"Scale" : 
+				[
+					0.16556484997272491,
+					0.50825780630111694,
+					0.11339477449655533
+				],
+				"Translate" : 
+				[
+					1.8279190063476563,
+					0.10763090848922729,
+					0.024133592844009399
+				]
+			},
+			"Type" : "Background"
+		},
+		{
+			"Animator" : 
+			{
+				"AffineStates" : [],
+				"DefaultAffineState" : "None",
+				"DefaultSkeletalState" : "None",
+				"SkeletalStates" : {}
+			},
+			"DataFile" : "Background",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"CastsShadow" : false,
+				"IsBillboard" : false,
+				"IsUI" : false,
+				"Material" : "T04",
+				"MeshMaterials" : 
+				[
+					"None"
+				],
+				"Model" : "Cube",
+				"Renderable" : true
+			},
+			"Name" : "T04",
+			"Transform" : 
+			{
+				"RotationAngles" : 
+				[
+					88.850814819335938,
+					-0.0,
+					0.0
+				],
+				"Scale" : 
+				[
+					0.16556484997272491,
+					0.50825780630111694,
+					0.11339477449655533
+				],
+				"Translate" : 
+				[
+					1.8279190063476563,
+					-0.020891427993774414,
+					-0.145722895860672
+				]
+			},
+			"Type" : "Background"
+		},
+		{
+			"Animator" : 
+			{
+				"AffineStates" : [],
+				"DefaultAffineState" : "None",
+				"DefaultSkeletalState" : "None",
+				"SkeletalStates" : {}
+			},
+			"DataFile" : "Background",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"CastsShadow" : false,
+				"IsBillboard" : false,
+				"IsUI" : false,
+				"Material" : "T05",
+				"MeshMaterials" : 
+				[
+					"None"
+				],
+				"Model" : "Cube",
+				"Renderable" : true
+			},
+			"Name" : "T05",
+			"Transform" : 
+			{
+				"RotationAngles" : 
+				[
+					88.850814819335938,
+					-0.0,
+					0.0
+				],
+				"Scale" : 
+				[
+					0.22185689210891724,
+					0.68108153343200684,
+					0.15194900333881378
+				],
+				"Translate" : 
+				[
+					1.8279190063476563,
+					-0.15952432155609131,
+					-0.35485011339187622
+				]
+			},
+			"Type" : "Background"
+		}
+	],
+	"IsEnabled" : true,
+	"ModelComponent" : 
+	{
+		"CastsShadow" : false,
+		"IsBillboard" : false,
+		"IsUI" : false,
+		"Material" : "Gray50",
+		"MeshMaterials" : 
+		[
+			"None"
+		],
+		"Model" : "Cube",
+		"Renderable" : true
+	},
+	"Name" : "Tutorial",
+	"Transform" : 
+	{
+		"RotationAngles" : 
+		[
+			0.0,
+			-0.0,
+			0.0
+		],
+		"Scale" : 
+		[
+			0.1811978816986084,
+			6.4556026458740234,
+			20.913414001464844
+		],
+		"Translate" : 
+		[
+			-16.443508148193359,
+			5.0168914794921875,
+			-7.2541294097900391
+		]
+	},
+	"Type" : "Background"
+}

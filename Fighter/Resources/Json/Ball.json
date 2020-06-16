@@ -1,0 +1,41 @@
+{
+  "Type": "Ball",
+  "Transform": {
+    "Scale": [ 3.0, 3.0, 3.0 ],
+    "Translate": [ 0.0, 10.0, 0.0 ],
+    "RotationAngles": [ 0.0, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "Cube",
+    "Material": "Orange",
+    "Renderable": true,
+    "CastsShadow": true
+  },
+  "Body": {
+    "mPos": 0.0,
+    "mPrevPos": 0.0,
+    "mVel": 0.0,
+    "mAcc": 0.0,
+    "mMass": 1.5,
+    "mTotalForce": 0.0,
+    "constantVelocity": 0.0,
+    "applyFriction": true,
+    "isConstantVelocitySet": false,
+    "constrainX": false,
+    "constrainY": false,
+    "mUseGravity": true
+  },
+  "Collider": {
+    "mLType": "Ball",
+    "mCoeffStaticFriction": 2.0,
+    "mCoeffDynamicFriction": 0.5,
+    "mShape": "AABB",
+    "isTrigger": false
+  },
+  "ScriptComponent": {
+    "scripts": [ ".\\Resources\\Scripts\\ball.py" ]
+  },
+  "Audio": {
+    "mSoundName": ""
+  }
+}

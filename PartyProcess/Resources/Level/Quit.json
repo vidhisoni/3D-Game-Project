@@ -1,0 +1,60 @@
+{
+  "Confirmation": [
+    {
+      "Name": "Text1",
+      "DataFile": "UI",
+      "UIComponent": {
+        "Type": "Text",
+        "String": "Are you sure?"
+      },
+      "Transform": {
+        "Translate": [ 0.48, 0.35, 0.0 ],
+        "Scale": [ 0.15, 0.07, 0.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Test_White"
+      }
+    },
+    {
+      "DataFile": "Menu",
+      "Name": "Yes No Quit Selection",
+      "ScriptComponent": {
+        "scripts": [
+          ".\\Resources\\Scripts\\MenuControl.py"
+        ]
+      },
+      "Children":[
+       {
+      "Name": "Button1",
+      "DataFile": "UI",
+      "UIComponent":{
+        "Type": "Button",
+        "Label": "Yes",
+        "Action": ""
+      },
+      "Transform": {
+         "Translate" : [0.425, 0.45, 0.0],
+        "Scale": [ 0.15, 0.07, 0.0 ]
+      },
+      "ModelComponent": {
+        "Material": "YesButton"
+      }
+    },
+    {
+      "Name": "Button2",
+      "DataFile": "UI",
+      "UIComponent":{
+        "Type": "Button",
+        "Label": "No",
+        "Action": ""
+      },
+      "Transform": {
+         "Translate" : [0.425, 0.55, 0.0],
+        "Scale": [ 0.15, 0.07, 0.0 ]
+      },
+      "ModelComponent": {
+        "Material": "NoButton"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "Type": "Wall",
+  "Transform": {
+    "Scale": [ 0.1, 0.1, 0.1 ],
+    "Translate": [ 0.0, -1.2, 0.5 ],
+    "RotationAngles": [ 0.0, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "Cube",
+    "Material": "DarkGround",
+    "Renderable": true,
+    "CastsShadow": true
+  },
+  "Body": {
+    "mPos": 0.0,
+    "mPrevPos": 0.0,
+    "mVel": 0.0,
+    "mAcc": 0.0,
+    "mTotalForce": 0.0,
+    "constantVelocity": 200.0,
+    "applyFriction": true,
+    "mMass": 1.0,
+    "isConstantVelocitySet": true,
+    "mConstrainX": false,
+    "mConstrainY": false,
+    "mConstrainZ": false,
+    "mUseGravity": false
+  },
+  "Collider": {
+    "mIsTrigger": false,
+    "mLType": "Wall",
+    "mShape": "AABB",
+    "Offset": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mCoeffStaticFriction": 0.0,
+    "mCoeffDynamicFriction": 0.2,
+    "mApplyFriction": true
+  },
+  "Wall": {}
+}

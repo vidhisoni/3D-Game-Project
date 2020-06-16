@@ -1,0 +1,262 @@
+{
+  "BaseFightLevel": [
+    {
+      "Comment": "OBSERVER OBJECT",
+      "DataFile": "ObserverObject"
+    },
+    {
+      "Comment": "LEVEL CAMERA",
+      "DataFile": "CameraObject",
+      "Camera": {
+        "Default": false
+      },
+      "Transform": {
+        "Translate": [ 0, -5.0, 10.0 ]
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\simple_cam_control.py" ]
+      }
+    },
+    {
+      "DataFile": "CameraObject",
+      "IsEnabled": true,
+      "Name": "CameraObject",
+      "ScriptComponent": {
+        "scripts": [
+          ".\\Resources\\Scripts\\game_cam.py"
+        ]
+      },
+      "Camera": {
+        "Default": true
+      },
+      "Transform": {
+        "RotationAngles": [
+          -90.0,
+          34.0,
+          0.0
+        ],
+        "Translate": [ 0.0, 120.0, 60.0 ]
+      }
+    },
+    {
+      "DataFile": "Ground",
+      "IsEnabled": true,
+      "ModelComponent": {
+        "MeshMaterials": [
+          "None"
+        ]
+      },
+      "Name": "Ground"
+    },
+    {
+      "DRLightComponent": {
+        "ClapOn": true
+      },
+      "DataFile": "DRLight",
+      "IsEnabled": true,
+      "ModelComponent": {
+        "MeshMaterials": [
+          "None"
+        ]
+      },
+      "Name": "DRLight"
+    },
+    {
+      "DataFile": "Skybox",
+      "IsEnabled": true,
+      "ModelComponent": {
+        "MeshMaterials": [
+          "None"
+        ]
+      },
+      "Name": "Skybox",
+      "Transform": {
+        "Translate": [
+          -0.98999857902526855,
+          28.761030197143555,
+          34.364738464355469
+        ]
+      }
+    },
+
+    {
+      "Comment": "1st CHARACTER",
+      "DataFile": "PlayerObject",
+      "ModelComponent": {
+        "Material": "Blue"
+      },
+      "Transform": {
+        "Translate": [ -20.0, 6.0, 0.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Player",
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 1.0
+      },
+      "Controller": {
+        "player": 0
+      },
+      "Children": [
+        {
+          "Name": "Attack",
+          "DataFile": "Glove",
+          "Transform": {
+            "Translate": [ 0.0, 0.0, 0 ]
+          },
+          "ScriptComponent": {
+            "scripts": [ ".\\Resources\\Scripts\\punch_attack.py" ]
+          }
+        },
+        {
+          "Name": "Exhaust",
+          "DataFile": "InvisibleCube",
+          "Transform": {
+            "Translate": [ 0.0, 0.55, 0.0 ],
+            "RotationAngles": [ 90.0, 0.0, 0.0 ]
+          },
+          "Collider": {
+            "mLType": "UNKNOWN",
+            "mShape": "AABB",
+            "isTrigger": true
+          },
+          "Body": {
+            "mUseGravity": false,
+            "mMass": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "Comment": "2n CHARACTER",
+      "DataFile": "PlayerObject",
+      "ModelComponent": {
+        "Material": "Green"
+      },
+      "Transform": {
+        "Translate": [ 20.0, 6.0, 0.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Player",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 1.0
+      },
+      "Controller": {
+        "player": 1
+      },
+      "Children": [
+        {
+          "Name": "Attack",
+          "DataFile": "Glove",
+          "Transform": {
+            "Translate": [ 0.0, 0.0, 0.0 ]
+          },
+          "ScriptComponent": {
+            "scripts": [ ".\\Resources\\Scripts\\punch_attack.py" ]
+          }
+        },
+        {
+          "Name": "Exhaust",
+          "DataFile": "InvisibleCube",
+          "Transform": {
+            "Translate": [ 0.0, 0.55, 0.0 ],
+            "RotationAngles": [ 90.0, 0.0, 0.0 ]
+          },
+          "Body": {
+            "mUseGravity": false,
+            "mMass": 0.0
+          },
+          "Collider": {
+            "mLType": "UNKNOWN",
+            "mShape": "AABB",
+            "isTrigger": true
+          }
+        }
+      ]
+    },
+    {
+      "DataFile": "Goal",
+      "IsEnabled": true,
+      "Transform": {
+        "Translate": [ -40.0, 3.0, 0.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Blue"
+      },
+      "Name": "Blue-Goal"
+    },
+    {
+      "DataFile": "Goal",
+      "IsEnabled": true,
+      "Transform": {
+        "Translate": [ 40.0, 3.0, 0.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Green"
+      },
+      "Name": "Green-Goal"
+    },
+    {
+      "DataFile": "Wall",
+      "IsEnabled": true,
+      "Transform": {
+        "Translate": [ 0.0, 2.0, -34.0 ],
+        "Scale": [ 120.0, 7.0, 2.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Purple"
+      },
+      "Name": "Wall0"
+    },
+    {
+      "DataFile": "Wall",
+      "IsEnabled": true,
+      "Transform": {
+        "Translate": [ 0.0, 2.0, 34.0 ],
+        "Scale": [ 120.0, 7.0, 2.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Purple"
+      },
+      "Name": "Wall1"
+    },
+    {
+      "DataFile": "Wall",
+      "IsEnabled": true,
+      "Transform": {
+        "Translate": [ 60.0, 2.0, 0.0 ],
+        "Scale": [ 2.0, 7.0, 70.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Purple"
+      },
+      "Name": "Wall2"
+    },
+    {
+      "DataFile": "Wall",
+      "IsEnabled": true,
+      "Transform": {
+        "Translate": [ -60.0, 2.0, 0.0 ],
+        "Scale": [ 2.0, 7.0, 70.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Purple"
+      },
+      "Name": "Wall3"
+    },
+    {
+      "DataFile": "Ball"
+    }
+  ]
+}

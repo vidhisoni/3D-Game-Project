@@ -1,0 +1,89 @@
+{
+  "Test": [
+    {
+      "DataFile": "PlayerObject",
+      "Transform": {
+        "Translate": [ 1.0, 10.0, 0.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Player",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.0,
+        "mCoeffDynamicFriction": 0.2,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 1.0
+      }
+    },
+    {
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Ground"
+      },
+      "Transform": {
+        "Scale": [ 100.0, 0.01, 100.0 ],
+        "Translate": [ 0.0, -2.0, -0.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0
+      },
+      "Body": {
+        "mUseGravity": false,
+        "mMass": 0.0
+      }
+    },
+    {
+      "DataFile": "Light",
+      "Transform": {
+        "Translate": [ 5.0, -1.0, 5.0 ]
+      },
+      "LocalLightComponent": {
+        "LightColor": [ 2.0, 1.0, 4.0 ]
+      }
+    },
+    {
+      "DataFile": "Light",
+      "Transform": {
+        "Translate": [ 5.0, -1.0, 1.0 ]
+      },
+      "LocalLightComponent": {
+        "LightColor": [ 0.0, 1.0, 4.0 ]
+      }
+    },
+    {
+      "DataFile": "Light",
+      "Transform": {
+        "Translate": [ 1.0, -1.0, 5.0 ]
+      },
+      "LocalLightComponent": {
+        "LightColor": [ 2.0, 1.0, 0.0 ]
+      }
+    },
+    {
+      "DataFile": "DRLight"
+    },
+    {
+      "DataFile": "DRLight",
+      "Transform": {
+        "Translate": [ -2.0, 5.0, 0.0 ]
+      }
+    },
+    {
+      "DataFile": "Skybox"
+    },
+    {
+      "DataFile": "Particle"
+    },
+    {
+      "DataFile": "Camera"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "DiffuseTexture": "Noise1",
+  "Diffuse": [ 0.58, 0.0, 0.83, 1.0 ],
+  "Specular": [ 0.1, 0.1, 0.1 ],
+  "Shininess": 0.1,
+  "Shader": "DRLighting"
+}

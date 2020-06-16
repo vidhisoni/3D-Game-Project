@@ -1,0 +1,246 @@
+{
+  "p000": [
+    { "Comment": "____________________________Player___________________________" },
+    {
+      "Comment": "LEVEL CAMERA",
+      "DataFile": "CameraObject",
+      "Camera": {
+        "Default": false
+      },
+      "Transform": {
+        "Translate": [ 1.0, 0.0, 11.0 ]
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\simple_cam_control.py" ]
+      }
+    },
+    {
+      "Comment": "3rd person CAMERA",
+      "DataFile": "CameraObject",
+      "Camera": {
+        "Default": true
+      },
+      "Transform": {
+        "Translate": [ 1.0, 3.0, 15.0 ],
+        "RotationAngles": [ -90.0, 20.0, 0.0 ]
+
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\third_person_cam.py" ]
+      }
+    },
+    {
+      "Comment": "MAIN CHARACTER",
+      "DataFile": "PlayerObject",
+      "ModelComponent": {
+        "Model": "Mannequin",
+        "Material": "Blue"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 2.0, 2.0 ],
+        "Translate": [ 1.0, 6.0, 10.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Player",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 1.0
+      }
+    },
+    { "Comment": "____________________________BASIC SCENARIO____________________________" },
+ 
+
+    {
+      "Comment": "1.- Common floor",
+
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Ground"
+      },
+      "Transform": {
+        "Scale": [ 100.0, 1.0, 140.0 ],
+        "Translate": [ 0.0, -0.5, -50.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 4.0,
+        "mCoeffDynamicFriction": 4.0
+      },
+      "Body": {
+        "mUseGravity": false,
+        "mMass": 0.0
+      }
+    },
+ 
+    {
+      "Comment": "5.-LEFT WALL",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "DarkGround"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 20.0, 100.0 ],
+        "Translate": [ -10.0, 10.0, -40.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      }
+    },
+    {
+      "Comment": "6.- RIGHT WALL",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "DarkGround"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 20.0, 100.0 ],
+        "Translate": [ 10.0, 10.0, -40.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      }
+    },
+
+    { "Comment": "____________________________PATH____________________________" },
+    {
+      "Comment": "Path0",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Grass"
+      },
+      "Transform": {
+        "Scale": [ 32.0, 0.1, 14.0 ],
+        "Translate": [ -0.0, 0.0, -20.0 ],
+        "RotationAngles": [ -0.0, 0.0, -0.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB"
+      }
+    },
+
+    { "Comment": "____________________________ENDING ELEMENTS___________________________" },
+    {
+      "Comment": "Button Particles - 3",
+      "DataFile": "ButtonObject",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Red"
+      },
+      "Transform": {
+        "Scale": [ 2.0, 0.2, 2.0 ],
+        "Translate": [ 0.0, 0.0, -85.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": true,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.1,
+        "mCoeffDynamicFriction": 0.1,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.0
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\final_button.py" ]
+      },
+      "ParticlesComponent": {
+        "PartNumber": 5000.0,
+        "PartLife": 1.0,
+        "PartPos": [ 0.0, 3.0, -83.0 ],
+        "MainDir": [ 0.0, 5.0, 0.0 ],
+        "ParticleType": "Sphere",
+        "left": true
+      }
+    },
+    {
+      "DataFile": "Particle",
+      "ParticlesComponent": {
+        "PartNumber": 3000.0,
+        "PartLife": 1.0,
+        "PartPos": [ -5.0, 3.0, -85.0 ],
+        "MainDir": [ 0.0, 5.0, 0.0 ],
+        "rightLim": 3,
+        "ParticleType": "Default"
+      }
+    },
+    {
+      "DataFile": "Particle",
+      "ParticlesComponent": {
+        "PartNumber": 3000.0,
+        "PartLife": 1.0,
+        "PartPos": [ 5.0, 3.0, -82.0 ],
+        "MainDir": [ 0.0, 5.0, 0.0 ],
+        "leftLim": -3,
+        "ParticleType": "Default"
+      }
+    },
+    {
+      "DataFile": "Particle",
+      "ParticlesComponent": {
+        "PartNumber": 2000.0,
+        "PartLife": 1.0,
+        "PartPos": [ 5.0, 2.0, -85.0 ],
+        "MainDir": [ 0.0, -5.0, 0.0 ],
+        "ParticleType": "Cube"
+      }
+    },
+    {
+      "DataFile": "Particle",
+      "ParticlesComponent": {
+        "PartNumber": 2000.0,
+        "PartLife": 1.0,
+        "PartPos": [ -5.0, 2.0, -85.0 ],
+        "MainDir": [ 0.0, -5.0, 0.0 ],
+        "ParticleType": "Cube"
+      }
+
+    },
+    {
+      "DataFile": "DRLight",
+      "Transform": {
+        "Translate": [
+          0.0,
+          63.0,
+          71.0
+        ]
+      }
+    },
+    {
+      "DataFile": "Skybox"
+    }
+  ]
+}

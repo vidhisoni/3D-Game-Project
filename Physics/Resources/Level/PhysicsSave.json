@@ -1,0 +1,885 @@
+{
+	"PhysicsSave" : 
+	[
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 1.5,
+				"mUseGravity" : true
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 1.0,
+				"mCoeffStaticFriction" : 1.0,
+				"mLType" : "Player"
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"Material" : "Red",
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.5,
+					1.5,
+					1.5
+				],
+				"Translate" : 
+				[
+					10.0,
+					5.0,
+					0.0
+				]
+			}
+		},
+		{
+			"DataFile" : "Camera",
+			"IsEnabled" : true,
+			"Name" : "Camera",
+			"ScriptComponent" : 
+			{
+				"always-run" : true,
+				"scripts" : 
+				[
+					".\\Resources\\Scripts\\simple_cam_control.py"
+				]
+			},
+			"Transform" : 
+			{
+				"RotationAngles" : 
+				[
+					-90.0,
+					10.0,
+					0.0
+				],
+				"Translate" : 
+				[
+					3.3200016021728516,
+					10.382264137268066,
+					45.318290710449219
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 1.0
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 1.0,
+				"mCoeffStaticFriction" : 1.0
+			},
+			"DataFile" : "Player",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"Material" : "Blue",
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Player",
+			"Transform" : 
+			{
+				"Translate" : 
+				[
+					0.0,
+					6.0,
+					0.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 0.0
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 5.0,
+				"mCoeffStaticFriction" : 5.0
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					50.0,
+					1.0,
+					50.0
+				],
+				"Translate" : 
+				[
+					0.0,
+					-1.0,
+					0.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 0.0
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 5.0,
+				"mCoeffStaticFriction" : 5.0
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					5.0,
+					5.0,
+					55.0
+				],
+				"Translate" : 
+				[
+					-24.0,
+					-1.0,
+					0.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 0.0
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 5.0,
+				"mCoeffStaticFriction" : 5.0
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					5.0,
+					5.0,
+					55.0
+				],
+				"Translate" : 
+				[
+					24.0,
+					-1.0,
+					0.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 0.0
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 5.0,
+				"mCoeffStaticFriction" : 5.0
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					55.0,
+					5.0,
+					5.0
+				],
+				"Translate" : 
+				[
+					0.0,
+					-1.0,
+					-24.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 0.0
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 5.0,
+				"mCoeffStaticFriction" : 5.0
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					55.0,
+					5.0,
+					5.0
+				],
+				"Translate" : 
+				[
+					0.0,
+					-1.0,
+					24.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 2.0,
+				"mUseGravity" : true
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 1.0,
+				"mCoeffStaticFriction" : 1.0,
+				"mLType" : "Player"
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"Material" : "Orange",
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					2.0,
+					2.0,
+					2.0
+				],
+				"Translate" : 
+				[
+					-5.0,
+					5.0,
+					0.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 0.75,
+				"mUseGravity" : true
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 1.0,
+				"mCoeffStaticFriction" : 1.0,
+				"mLType" : "Player"
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"Material" : "Green",
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					0.75,
+					0.75,
+					0.75
+				],
+				"Translate" : 
+				[
+					-15.0,
+					5.0,
+					-5.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 3.5,
+				"mUseGravity" : true
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 1.0,
+				"mCoeffStaticFriction" : 1.0,
+				"mLType" : "Player"
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"Material" : "Black",
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					3.0,
+					5.0,
+					7.0
+				],
+				"Translate" : 
+				[
+					-10.0,
+					5.0,
+					10.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 2.0,
+				"mUseGravity" : true
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 1.0,
+				"mCoeffStaticFriction" : 1.0,
+				"mLType" : "Player"
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"Material" : "Grass",
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					2.0,
+					1.0,
+					2.0
+				],
+				"Translate" : 
+				[
+					-5.0,
+					5.0,
+					0.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 1.5,
+				"mUseGravity" : true
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 1.0,
+				"mCoeffStaticFriction" : 1.0,
+				"mLType" : "Player"
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"Material" : "Yellow",
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					2.0,
+					2.0,
+					4.0
+				],
+				"Translate" : 
+				[
+					15.0,
+					5.0,
+					-5.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 1.5,
+				"mUseGravity" : true
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 1.0,
+				"mCoeffStaticFriction" : 1.0,
+				"mLType" : "Player"
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"Material" : "Yellow",
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					2.0,
+					2.0,
+					2.0
+				],
+				"Translate" : 
+				[
+					-2.75,
+					5.0,
+					15.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 1.5,
+				"mUseGravity" : true
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 1.0,
+				"mCoeffStaticFriction" : 1.0,
+				"mLType" : "Player"
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"Material" : "Yellow",
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					2.0,
+					2.0,
+					2.0
+				],
+				"Translate" : 
+				[
+					-14.0,
+					5.0,
+					12.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 30.0,
+				"mUseGravity" : true
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 1.0,
+				"mCoeffStaticFriction" : 1.0,
+				"mLType" : "Player"
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"Material" : "Default",
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					6.5,
+					6.5,
+					6.5
+				],
+				"Translate" : 
+				[
+					-13.0,
+					5.0,
+					-7.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 0.5,
+				"mUseGravity" : true
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 1.0,
+				"mCoeffStaticFriction" : 1.0,
+				"mLType" : "Player"
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"Material" : "Orange",
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"Translate" : 
+				[
+					-6.0,
+					5.0,
+					-7.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 0.5,
+				"mUseGravity" : true
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 1.0,
+				"mCoeffStaticFriction" : 1.0,
+				"mLType" : "Player"
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"Material" : "Orange",
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					0.5,
+					0.5,
+					0.5
+				],
+				"Translate" : 
+				[
+					6.0,
+					5.0,
+					-7.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 3.5,
+				"mUseGravity" : true
+			},
+			"Collider" : 
+			{
+				"mCoeffDynamicFriction" : 1.0,
+				"mCoeffStaticFriction" : 1.0,
+				"mLType" : "Player"
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"Material" : "Black",
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					5.0,
+					5.0,
+					5.0
+				],
+				"Translate" : 
+				[
+					12.0,
+					5.0,
+					6.0
+				]
+			}
+		},
+		{
+			"DRLightComponent" : 
+			{
+				"ClapOn" : true,
+				"Direction" : 
+				[
+					-10.0,
+					-30.0,
+					-10.0
+				],
+				"Intensity" : 1.0,
+				"LightColor" : 
+				[
+					0.75,
+					0.75,
+					0.75
+				]
+			},
+			"DataFile" : "DRLight",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "DRLight",
+			"Transform" : 
+			{
+				"Translate" : 
+				[
+					10.0,
+					30.0,
+					10.0
+				]
+			}
+		},
+		{
+			"DataFile" : "Skybox",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Skybox",
+			"Transform" : 
+			{
+				"Translate" : 
+				[
+					3.3200016021728516,
+					10.382264137268066,
+					45.318290710449219
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 0.0
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					2.0,
+					2.0,
+					2.0
+				],
+				"Translate" : 
+				[
+					5.6500000953674316,
+					5.0,
+					-1.1000000238418579
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 0.0
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					2.0,
+					2.0,
+					2.0
+				],
+				"Translate" : 
+				[
+					-15.0,
+					5.0,
+					15.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mMass" : 0.0
+			},
+			"DataFile" : "Cube",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Name" : "Cube",
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					2.0,
+					2.0,
+					2.0
+				],
+				"Translate" : 
+				[
+					1.4500000476837158,
+					5.0,
+					15.0
+				]
+			}
+		}
+	]
+}

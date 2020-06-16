@@ -1,0 +1,403 @@
+{
+  "PhysicsScene": [
+    {
+      "Comment": "Player",
+      "DataFile": "Player",
+      "ModelComponent": {
+        "Material": "Blue"
+      },
+      "Transform": {
+        "Translate": [ 0.0, 6.0, 0.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Player",
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 1.0
+      },
+      "Controller": {
+        "player": 0
+      }
+    },
+    { "Comment": "______________________________SCENARIO____________________________________" },
+    {
+      "Comment": "Floor",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 50.0, 1.0, 50.0 ],
+        "Translate": [ 0.0, -1.0, 0.0 ]
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 5.0,
+        "mCoeffDynamicFriction": 5.0,
+        "mApplyFriction": true
+      }
+    },
+    {
+      "Comment": "East wall",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 5.0, 5.0, 55.0 ],
+        "Translate": [ -24.0, -1.0, 0.0 ]
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 5.0,
+        "mCoeffDynamicFriction": 5.0,
+        "mApplyFriction": true
+      }
+    },
+    {
+      "Comment": "West wall",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 5.0, 5.0, 55.0 ],
+        "Translate": [ 24.0, -1.0, 0.0 ]
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 5.0,
+        "mCoeffDynamicFriction": 5.0,
+        "mApplyFriction": true
+      }
+    },
+    {
+      "Comment": "North wall",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 55.0, 5.0, 5.0 ],
+        "Translate": [ 0.0, -1.0, -24.0 ]
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 5.0,
+        "mCoeffDynamicFriction": 5.0,
+        "mApplyFriction": true
+      }
+    },
+    {
+      "Comment": "South wall",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 55.0, 5.0, 5.0 ],
+        "Translate": [ 0.0, -1.0, 24.0 ]
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 5.0,
+        "mCoeffDynamicFriction": 5.0,
+        "mApplyFriction": true
+      }
+    },
+    {
+      "Comment": "1",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 1.5, 1.5, 1.5 ],
+        "Translate": [ -5.0, 5, 0.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Orange"
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mLType": "Player",
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 2.0
+      }
+    },
+    {
+      "Comment": "2",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 1.5, 1.5, 1.5 ],
+        "Translate": [ 10.0, 5, 0.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Red"
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mLType": "Player",
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 1.5
+      }
+    },
+    {
+      "Comment": "3",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 1.5, 1.5, 1.5 ],
+        "Translate": [ -15.0, 5, -5.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Green"
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mLType": "Player",
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.75
+      }
+    },
+    {
+      "Comment": "4",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 1.5, 1.5, 1.5 ],
+        "Translate": [ -10.0, 5, 10.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Black"
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mLType": "Player",
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 3.5
+      }
+    },
+    {
+      "Comment": "5",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 1.5, 1.5, 1.5 ],
+        "Translate": [ -5.0, 5, 0.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Grass"
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mLType": "Player",
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 2.0
+      }
+    },
+    {
+      "Comment": "6",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 1.5, 1.5, 1.5 ],
+        "Translate": [ 15.0, 5, -5.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Yellow"
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mLType": "Player",
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 1.5
+      }
+    },
+    {
+      "Comment": "12",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 1.5, 1.5, 1.5 ],
+        "Translate": [ -15.0, 5, 15.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Yellow"
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mLType": "Player",
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 1.5
+      }
+    },
+    {
+      "Comment": "13",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 1.5, 1.5, 1.5 ],
+        "Translate": [ -14.0, 5, 12.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Yellow"
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mLType": "Player",
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 1.5
+      }
+    },
+    {
+      "Comment": "13",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 1.5, 1.5, 1.5 ],
+        "Translate": [ 0.0, 5, 12.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Yellow"
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mLType": "Player",
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 1.5
+      }
+    },
+    {
+      "Comment": "13",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 1.5, 1.5, 1.5 ],
+        "Translate": [ 3.0, 5, 5.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Yellow"
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mLType": "Player",
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 1.5
+      }
+    },
+    {
+      "Comment": "10",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 1.5, 1.5, 1.5 ],
+        "Translate": [ -13.0, 5, -7.0 ]
+      },
+      "ModelComponent": {
+        "Material": "green"
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mLType": "Player",
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 30.0
+      }
+    },
+    {
+      "Comment": "9",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 1.5, 1.5, 1.5 ],
+        "Translate": [ -6.0, 5, -7.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Orange"
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mLType": "Player",
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.5
+      }
+    },
+    {
+      "Comment": "7",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 1.5, 1.5, 1.5 ],
+        "Translate": [ 6.0, 5, -7.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Orange"
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mLType": "Player",
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 0.5
+      }
+    },
+    {
+      "Comment": "8",
+      "DataFile": "Cube",
+      "Transform": {
+        "Scale": [ 1.5, 1.5, 1.5 ],
+        "Translate": [ 12.0, 5, 6.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Black"
+      },
+      "Collider": {
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0,
+        "mLType": "Player",
+        "mApplyFriction": true
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 3.5
+      }
+    },
+    { "Comment": "______________________________Lighting________________________________________" },
+    {
+      "Name": "Sun",
+      "DataFile": "DRLight",
+      "Transform": {
+        "Translate": [ 10.0, 30.0, 10.0 ]
+      },
+      "DRLightComponent": {
+        "LightColor": [ 0.75, 0.75, 0.75 ],
+        "Direction": [ -10.0, -30.0, -10.0 ]
+      }
+    },
+    {
+      "DataFile": "Skybox"
+    }
+  ]
+}

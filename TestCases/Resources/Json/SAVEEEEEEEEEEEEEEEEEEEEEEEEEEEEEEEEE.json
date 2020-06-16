@@ -1,0 +1,295 @@
+{
+	"SAVEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE" : 
+	[
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true
+			},
+			"Collider" : 
+			{
+				"mApplyFriction" : false,
+				"mCoeffDynamicFriction" : 0.11999999731779099,
+				"mCoeffStaticFriction" : 0.20000000298023224,
+				"mIsTrigger" : false
+			},
+			"DataFile" : "ButtonObject",
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"ScriptComponent" : 
+			{
+				"scripts" : 
+				[
+					".\\Resources\\Scripts\\basic_particle_button.py"
+				]
+			},
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					1.5,
+					0.5,
+					1.5
+				],
+				"Translate" : 
+				[
+					-2.0,
+					-1.5,
+					0.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mInvMass" : 1.0
+			},
+			"Collider" : 
+			{
+				"mApplyFriction" : false,
+				"mCoeffDynamicFriction" : 0.20000000298023224,
+				"mIsTrigger" : false
+			},
+			"DataFile" : "PlayerObject",
+			"ModelComponent" : 
+			{
+				"Material" : "Default",
+				"MeshMaterials" : 
+				[
+					"Blue",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None",
+					"None"
+				]
+			},
+			"Transform" : 
+			{
+				"Translate" : 
+				[
+					1.0,
+					2.9959630966186523,
+					0.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true,
+				"mUseGravity" : true
+			},
+			"Collider" : 
+			{
+				"mApplyFriction" : false,
+				"mCoeffDynamicFriction" : 0.10000000149011612,
+				"mCoeffStaticFriction" : 0.10000000149011612,
+				"mIsTrigger" : false,
+				"mLType" : "Box"
+			},
+			"DataFile" : "Cube",
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				],
+				"Model" : "Cube"
+			},
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					2.0,
+					2.0,
+					2.0
+				],
+				"Translate" : 
+				[
+					1.0,
+					2.0,
+					0.0
+				]
+			}
+		},
+		{
+			"Body" : 
+			{
+				"mApplyFriction" : true
+			},
+			"Collider" : 
+			{
+				"mApplyFriction" : false,
+				"mCoeffDynamicFriction" : 1.0,
+				"mCoeffStaticFriction" : 1.0,
+				"mIsTrigger" : false,
+				"mLType" : "Box"
+			},
+			"DataFile" : "Ground",
+			"ModelComponent" : 
+			{
+				"Material" : "Ground",
+				"MeshMaterials" : 
+				[
+					"None"
+				],
+				"Model" : "Cube"
+			},
+			"Transform" : 
+			{
+				"Scale" : 
+				[
+					100.0,
+					0.0099999997764825821,
+					100.0
+				],
+				"Translate" : 
+				[
+					0.0,
+					0.0,
+					-0.0
+				]
+			}
+		},
+		{
+			"DRLightComponent" : 
+			{
+				"ClapOn" : true
+			},
+			"DataFile" : "DRLight",
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Transform" : 
+			{
+				"Translate" : 
+				[
+					-2.0,
+					5.0,
+					0.0
+				]
+			}
+		},
+		{
+			"DataFile" : "Light",
+			"LocalLightComponent" : 
+			{
+				"ClapOn" : true,
+				"LightColor" : 
+				[
+					2.0,
+					1.0,
+					4.0
+				]
+			},
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Transform" : 
+			{
+				"Translate" : 
+				[
+					5.0,
+					-1.0,
+					5.0
+				]
+			}
+		},
+		{
+			"DRLightComponent" : 
+			{
+				"ClapOn" : true
+			},
+			"DataFile" : "DRLight",
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			}
+		},
+		{
+			"DRLightComponent" : 
+			{
+				"ClapOn" : true
+			},
+			"DataFile" : "DRLight",
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Transform" : 
+			{
+				"Translate" : 
+				[
+					-2.0,
+					5.0,
+					0.0
+				]
+			}
+		},
+		{
+			"DataFile" : "Skybox",
+			"ModelComponent" : 
+			{
+				"MeshMaterials" : 
+				[
+					"None"
+				]
+			},
+			"Transform" : 
+			{
+				"Translate" : 
+				[
+					0.9999997615814209,
+					5.0315437316894531,
+					9.9271793365478516
+				]
+			}
+		},
+		{
+			"DataFile" : "Camera"
+		},
+		{
+			"DataFile" : "Particle"
+		}
+	]
+}

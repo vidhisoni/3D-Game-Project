@@ -1,0 +1,151 @@
+{
+  "Options": [
+    {
+      "DataFile": "Menu",
+      "Name": "Options",
+      "Children": [
+        {
+          "Name": "Button1",
+          "DataFile": "UI",
+          "UIComponent": {
+            "Type": "Slider",
+            "Label": "Volume",
+            "Min Value": 0,
+            "Max Value": 100
+          },
+          "Transform": {
+            "Translate": [ 0.5, 0.24, 0.0 ],
+            "Scale": [ 0.3, 0.025, 0.0 ]
+          },
+          "ModelComponent": {
+            "Material": "CheckBox"
+          }
+        },
+        { 
+          "Name": "Radio1",
+          "DataFile": "UI",
+          "UIComponent": {
+            "Type": "Radio",
+            "Label": "Mute",
+            "Options": [ "On", "Off" ]
+          },
+          "Transform": {
+            "Translate": [ 0.5, 0.39, 0.0 ],
+            "Scale": [ 0.15, 0.025, 0.0 ]
+          },
+          "ModelComponent": {
+            "Material": "CheckBox"
+          }
+        },
+        {
+          "Name": "Radio1",
+          "DataFile": "UI",
+          "UIComponent": {
+            "Type": "Radio",
+            "Label": "FullScreen",
+            "Options": [ "On", "Off" ]
+          },
+          "Transform": {
+            "Translate": [ 0.5, 0.54, 0.0 ],
+            "Scale": [ 0.15, 0.025, 0.0 ]
+          },
+          "ModelComponent": {
+            "Material": "CheckBox"
+          }
+        },
+        {
+          "Name": "Radio2",
+          "DataFile": "UI",
+          "UIComponent": {
+            "Type": "Radio",
+            "Label": "Resolution",
+            "Options": [ "800x600", "1280x1024", "1600x1200", "1920x1080" ]
+          },
+          "Transform": {
+            "Translate": [ 0.5, 0.69, 0.0 ],
+            "Scale": [ 0.3, 0.025, 0.0 ]
+          },
+          "ModelComponent": {
+            "Material": "CheckBox"
+          }
+        },
+        {
+          "Name": "Button1",
+          "DataFile": "UI",
+          "UIComponent": {
+            "Type": "Button",
+            "Label": "Back",
+            "Action": ""
+          },
+          "Transform": {
+            "Translate": [ 0.425, 0.85, 0.0 ],
+            "Scale": [ 0.15, 0.07, 0.0 ]
+          },
+          "ModelComponent": {
+            "Material": "BackButton"
+          }
+        }
+      ]
+    },
+    {
+
+      "Name": "Text1",
+      "DataFile": "UI",
+      "UIComponent": {
+        "Type": "Image",
+        "Description": "AudioText"
+      },
+      "Transform": {
+        "Translate": [ 0.4, 0.75, 0.0 ],
+        "Scale": [ 0.15, 0.07, 0.0 ]
+      },
+      "ModelComponent": {
+        "Material": "AudioText"
+      }
+    },
+    {
+      "Name": "Text2",
+      "DataFile": "UI",
+      "UIComponent": {
+        "Type": "Image"
+      },
+      "Transform": {
+        "Translate": [ 0.4, 0.6, 0.0 ],
+        "Scale": [ 0.15, 0.07, 0.0 ]
+      },
+      "ModelComponent": {
+        "Material": "MuteText"
+      }
+    }, 
+    {
+      "Name": "Text3",
+      "DataFile": "UI",
+      "UIComponent": {
+        "Type": "Image"
+      },
+      "Transform": {
+        "Translate": [ 0.4, 0.45, 0.0 ],
+        "Scale": [ 0.15, 0.07, 0.0 ]
+      },
+      "ModelComponent": {
+        "Material": "FullscreenText"
+      }
+    },
+
+    {
+      "Name": "Textf",
+      "DataFile": "UI",
+      "UIComponent": {
+        "Type": "Image"
+      },
+      "Transform": {
+        "Translate": [ 0.4, 0.3, 0.0 ],
+        "Scale": [ 0.15, 0.07, 0.0 ]
+      },
+      "ModelComponent": {
+        "Material": "ResolutionText"
+      }
+    }
+
+  ]
+}

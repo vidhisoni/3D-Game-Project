@@ -1,0 +1,38 @@
+{
+  "Type": "Glove",
+  "Transform": {
+    "Scale": [ 0.1, 0.1, 0.1 ],
+    "Translate": [ 0.0, 0.0, 0.0 ],
+    "RotationAngles": [ 0.0, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "glove",
+    "Material": "Red",
+    "Renderable": true,
+    "CastsShadow": false,
+    "Rescale": [ -1.5, -1.5, -1.5 ],
+    "Offset": [ 0.0, -0.25, 0.0 ]
+  },
+  "Body": {
+    "mPos": 0.0,
+    "mPrevPos": 0.0,
+    "mVel": 0.0,
+    "mAcc": 0.0,
+    "mTotalForce": 0.0,
+    "constantVelocity": 0.0,
+    "applyFriction": true,
+    "isConstantVelocitySet": false,
+    "constrainX": false,
+    "constrainY": false,
+    "mUseGravity": false
+  },
+
+
+
+  "Collider": {
+    "mLType": "UNKNOWN",
+    "mShape": "AABB",
+    "isTrigger": true
+  }
+
+}

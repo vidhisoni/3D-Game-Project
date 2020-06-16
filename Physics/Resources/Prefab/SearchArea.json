@@ -1,0 +1,34 @@
+{
+  "Name": "Search_Area",
+  "Type": "SearchArea",
+  "Transform": {
+    "Scale": [ 1.0, 1.0, 1.0 ],
+    "Translate": [ 0.0, 0.0, 0.0 ],
+    "RotationAngles": [ 0, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "Cube",
+    "Renderable": false,
+    "CastsShadow": false
+  },
+  "Body": {
+    "mUseGravity": false,
+    "mMass": 0.0
+  },
+  "Collider": {
+    "mCoeffStaticFriction": 0.0,
+    "mCoeffDynamicFriction": 0.0,
+    "mLType": "SearchArea",
+    "mShape": "AABB",
+    "mIsTrigger": true,
+    "mWidth": -1.0,
+    "mHeight": -1.0,
+    "mDepth": -1.0,
+    "mRadius": -1.0,
+    "Offset": [ 0.0, 0.0, 0.0 ],
+    "Rescale": [ 0.0, 0.0, 0.0 ]
+  },
+  "AreaSearch": {
+    "CompareFunction": "Closest"
+  }
+}

@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{8A0BAA11-63E2-48A7-85C1-78A31B0B8B76}</ProjectGuid>
+    <RootNamespace>PartyProcess</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>ShipIT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>ShipIT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>GEAR_PLATFORM_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Project1\Dependencies\Include\;$(SolutionDir)Project1\;$(SolutionDir)Project1\Source\Components;$(SolutionDir)Project1\Source\Editor;$(SolutionDir)Project1\Source\Events;$(SolutionDir)Project1\Source\Input;$(SolutionDir)Project1\Source\Managers;$(SolutionDir)Project1\Source\Random;$(SolutionDir)Project1\Source\Resources;$(SolutionDir)Project1\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)Project1\Dependencies\Library\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>GEAR_PLATFORM_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Project1\Dependencies\Include\;$(SolutionDir)Project1\;$(SolutionDir)Project1\Source\Components;$(SolutionDir)Project1\Source\Editor;$(SolutionDir)Project1\Source\Events;$(SolutionDir)Project1\Source\Input;$(SolutionDir)Project1\Source\Managers;$(SolutionDir)Project1\Source\Random;$(SolutionDir)Project1\Source\Resources;$(SolutionDir)Project1\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Project1\Dependencies\Library\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config\config.json" />
+    <None Include="Resources\AffineAnimations\Box.aat" />
+    <None Include="Resources\AffineAnimations\Default.aat" />
+    <None Include="Resources\AffineAnimations\DownZ.aat" />
+    <None Include="Resources\AffineAnimations\Float.aat" />
+    <None Include="Resources\AffineAnimations\HandFloat.aat" />
+    <None Include="Resources\AffineAnimations\RotateDown.aat" />
+    <None Include="Resources\AffineAnimations\RotateUp.aat" />
+    <None Include="Resources\AffineAnimations\RotateYEach4Secs.aat" />
+    <None Include="Resources\AffineAnimations\SlowSpin.aat" />
+    <None Include="Resources\AffineAnimations\Spin.aat" />
+    <None Include="Resources\AffineAnimations\Squish.aat" />
+    <None Include="Resources\AffineAnimations\UpZ.aat" />
+    <None Include="Resources\KeyBindings\Bindings.json" />
+    <None Include="Resources\LevelData\Coffee01.json" />
+    <None Include="Resources\LevelData\Coffee02.json" />
+    <None Include="Resources\LevelData\Coffee03.json" />
+    <None Include="Resources\LevelData\Coffee04.json" />
+    <None Include="Resources\LevelData\Coffee05.json" />
+    <None Include="Resources\LevelData\DigiPen01.json" />
+    <None Include="Resources\LevelData\DigiPen02.json" />
+    <None Include="Resources\LevelData\DigiPen03.json" />
+    <None Include="Resources\LevelData\DigiPen04.json" />
+    <None Include="Resources\LevelData\DigiPen05.json" />
+    <None Include="Resources\LevelData\Needle01.json" />
+    <None Include="Resources\LevelData\Needle02.json" />
+    <None Include="Resources\LevelData\Needle03.json" />
+    <None Include="Resources\LevelData\Needle04.json" />
+    <None Include="Resources\LevelData\Needle05.json" />
+    <None Include="Resources\Level\Coffee01Level.json" />
+    <None Include="Resources\Level\Coffee02Level.json" />
+    <None Include="Resources\Level\Coffee03Level.json" />
+    <None Include="Resources\Level\Coffee04Level.json" />
+    <None Include="Resources\Level\Coffee05Level.json" />
+    <None Include="Resources\Level\Controls.json" />
+    <None Include="Resources\Level\Credits.json" />
+    <None Include="Resources\Level\DigiPen01Level.json" />
+    <None Include="Resources\Level\DigiPen02Level.json" />
+    <None Include="Resources\Level\DigiPen03Level.json" />
+    <None Include="Resources\Level\DigiPen04Level.json" />
+    <None Include="Resources\Level\DigiPen05Level.json" />
+    <None Include="Resources\Level\DigiPenLevel.json" />
+    <None Include="Resources\Level\Ending.json" />
+    <None Include="Resources\Level\LevelScreenFinal.json" />
+    <None Include="Resources\Level\MainMenu.json" />
+    <None Include="Resources\Level\MainMenuConfirmation.json" />
+    <None Include="Resources\Level\MapConfirmation.json" />
+    <None Include="Resources\Level\MapPauseMenu.json" />
+    <None Include="Resources\Level\MarsLevel.json" />
+    <None Include="Resources\Level\Needle01Level.json" />
+    <None Include="Resources\Level\Needle02Level.json" />
+    <None Include="Resources\Level\Needle03Level.json" />
+    <None Include="Resources\Level\Needle04Level.json" />
+    <None Include="Resources\Level\Needle05Level.json" />
+    <None Include="Resources\Level\Options.json" />
+    <None Include="Resources\Level\PauseMenu.json" />
+    <None Include="Resources\Level\Quit.json" />
+    <None Include="Resources\Level\QuitConfirmation.json" />
+    <None Include="Resources\Level\RestartConfirmation.json" />
+    <None Include="Resources\Level\Sandbox.json" />
+    <None Include="Resources\Level\Screens.json" />
+    <None Include="Resources\Level\SplashSequence.json" />
+    <None Include="Resources\Level\TestOBB.json" />
+    <None Include="Resources\Level\LevelSelection.json" />
+    <None Include="Resources\Materials\5thGearLogo.mat" />
+    <None Include="Resources\Materials\A.mat" />
+    <None Include="Resources\Materials\action3.mat" />
+    <None Include="Resources\Materials\action4.mat" />
+    <None Include="Resources\Materials\AI.mat" />
+    <None Include="Resources\Materials\Alien.mat" />
+    <None Include="Resources\Materials\Arcade.mat" />
+    <None Include="Resources\Materials\Art.mat" />
+    <None Include="Resources\Materials\Atom.mat" />
+    <None Include="Resources\Materials\Audio.mat" />
+    <None Include="Resources\Materials\AudioText.mat" />
+    <None Include="Resources\Materials\Awesome.mat" />
+    <None Include="Resources\Materials\B.mat" />
+    <None Include="Resources\Materials\BackButton.mat" />
+    <None Include="Resources\Materials\BeginButton.mat" />
+    <None Include="Resources\Materials\Bird.mat" />
+    <None Include="Resources\Materials\Black.mat" />
+    <None Include="Resources\Materials\BlackTransparent80.mat" />
+    <None Include="Resources\Materials\blue-ground.mat" />
+    <None Include="Resources\Materials\Blue.mat" />
+    <None Include="Resources\Materials\BodyBlack.mat" />
+    <None Include="Resources\Materials\BodyBlue.mat" />
+    <None Include="Resources\Materials\BodyGreen.mat" />
+    <None Include="Resources\Materials\BodyRed.mat" />
+    <None Include="Resources\Materials\BodyYellow.mat" />
+    <None Include="Resources\Materials\Bomber.mat" />
+    <None Include="Resources\Materials\BubbleLeft.mat" />
+    <None Include="Resources\Materials\BubbleRight.mat" />
+    <None Include="Resources\Materials\C.mat" />
+    <None Include="Resources\Materials\Clock.mat" />
+    <None Include="Resources\Materials\Coin.mat" />
+    <None Include="Resources\Materials\ColorBrown.mat" />
+    <None Include="Resources\Materials\ColorCoffeeReservory.mat" />
+    <None Include="Resources\Materials\ColorCooper.mat" />
+    <None Include="Resources\Materials\ColorDigipen.mat" />
+    <None Include="Resources\Materials\ColorGold.mat" />
+    <None Include="Resources\Materials\ColorGolden.mat" />
+    <None Include="Resources\Materials\ColorGrass.mat" />
+    <None Include="Resources\Materials\ColorRedBlood.mat" />
+    <None Include="Resources\Materials\ColorSilver.mat" />
+    <None Include="Resources\Materials\ColorTransparentGold.mat" />
+    <None Include="Resources\Materials\ColorWater.mat" />
+    <None Include="Resources\Materials\Color_BlueDark.mat" />
+    <None Include="Resources\Materials\Color_SB_Coffee.mat" />
+    <None Include="Resources\Materials\Concrete.mat" />
+    <None Include="Resources\Materials\Controls.mat" />
+    <None Include="Resources\Materials\ControlsButton.mat" />
+    <None Include="Resources\Materials\CoronavirusNo.mat" />
+    <None Include="Resources\Materials\CPP01.mat" />
+    <None Include="Resources\Materials\CPP02.mat" />
+    <None Include="Resources\Materials\CPP03.mat" />
+    <None Include="Resources\Materials\CreditsButton.mat" />
+    <None Include="Resources\Materials\Crystal.mat" />
+    <None Include="Resources\Materials\D.mat" />
+    <None Include="Resources\Materials\Default.mat" />
+    <None Include="Resources\Materials\Design.mat" />
+    <None Include="Resources\Materials\DevCredits.mat" />
+    <None Include="Resources\Materials\Dice.mat" />
+    <None Include="Resources\Materials\DigiPenCredits.mat" />
+    <None Include="Resources\Materials\DigipenFloor.mat" />
+    <None Include="Resources\Materials\DigiPenLogo.mat" />
+    <None Include="Resources\Materials\Door.mat" />
+    <None Include="Resources\Materials\DP_Tree.mat" />
+    <None Include="Resources\Materials\DP_Tree02.mat" />
+    <None Include="Resources\Materials\DP_Tree03.mat" />
+    <None Include="Resources\Materials\dr01.mat" />
+    <None Include="Resources\Materials\dr02.mat" />
+    <None Include="Resources\Materials\dr04.mat" />
+    <None Include="Resources\Materials\dr07.mat" />
+    <None Include="Resources\Materials\dr08.mat" />
+    <None Include="Resources\Materials\dr09.mat" />
+    <None Include="Resources\Materials\dr11.mat" />
+    <None Include="Resources\Materials\dr12.mat" />
+    <None Include="Resources\Materials\dr13.mat" />
+    <None Include="Resources\Materials\dr14.mat" />
+    <None Include="Resources\Materials\dr15.mat" />
+    <None Include="Resources\Materials\Dragon.mat" />
+    <None Include="Resources\Materials\DRLight.mat" />
+    <None Include="Resources\Materials\DustinHead.mat" />
+    <None Include="Resources\Materials\F.mat" />
+    <None Include="Resources\Materials\FacultyCredits.mat" />
+    <None Include="Resources\Materials\Fighter.mat" />
+    <None Include="Resources\Materials\FireExtinguisher.mat" />
+    <None Include="Resources\Materials\FlatArt.mat" />
+    <None Include="Resources\Materials\FlatAudio.mat" />
+    <None Include="Resources\Materials\FlatDesign.mat" />
+    <None Include="Resources\Materials\FlatProgramming.mat" />
+    <None Include="Resources\Materials\FlatRed.mat" />
+    <None Include="Resources\Materials\FloorStarbucks.mat" />
+    <None Include="Resources\Materials\FloorStarbucksExternal.mat" />
+    <None Include="Resources\Materials\FMODLogo.mat" />
+    <None Include="Resources\Materials\Food.mat" />
+    <None Include="Resources\Materials\FPS.mat" />
+    <None Include="Resources\Materials\FullscreenText.mat" />
+    <None Include="Resources\Materials\GameTV.mat" />
+    <None Include="Resources\Materials\GeneralMap.mat" />
+    <None Include="Resources\Materials\Grade.mat" />
+    <None Include="Resources\Materials\Graphics.mat" />
+    <None Include="Resources\Materials\Grass.mat" />
+    <None Include="Resources\Materials\Gray50.mat" />
+    <None Include="Resources\Materials\Gray80.mat" />
+    <None Include="Resources\Materials\Ground.mat" />
+    <None Include="Resources\Materials\HandsDustin.mat" />
+    <None Include="Resources\Materials\HandsIvan.mat" />
+    <None Include="Resources\Materials\HandsSairaj.mat" />
+    <None Include="Resources\Materials\HandsTrevor.mat" />
+    <None Include="Resources\Materials\HandsVidhi.mat" />
+    <None Include="Resources\Materials\Horror.mat" />
+    <None Include="Resources\Materials\HowToPlay.mat" />
+    <None Include="Resources\Materials\IA.mat" />
+    <None Include="Resources\Materials\Interact.mat" />
+    <None Include="Resources\Materials\IvanHead.mat" />
+    <None Include="Resources\Materials\Key.mat" />
+    <None Include="Resources\Materials\Keyboard.mat" />
+    <None Include="Resources\Materials\LevelButton.mat" />
+    <None Include="Resources\Materials\Light.mat" />
+    <None Include="Resources\Materials\LoadingBG.mat" />
+    <None Include="Resources\Materials\LoadingScreen.mat" />
+    <None Include="Resources\Materials\Logo.mat" />
+    <None Include="Resources\Materials\Logo3D.mat" />
+    <None Include="Resources\Materials\Lunk.mat" />
+    <None Include="Resources\Materials\MapButton.mat" />
+    <None Include="Resources\Materials\Maze.mat" />
+    <None Include="Resources\Materials\MenuButton.mat" />
+    <None Include="Resources\Materials\MR_Cliff.mat" />
+    <None Include="Resources\Materials\MR_Floor.mat" />
+    <None Include="Resources\Materials\Mr_Terrain.mat" />
+    <None Include="Resources\Materials\MR_TransparentRed.mat" />
+    <None Include="Resources\Materials\MR_Tree.mat" />
+    <None Include="Resources\Materials\MuteText.mat" />
+    <None Include="Resources\Materials\n1.mat" />
+    <None Include="Resources\Materials\n2.mat" />
+    <None Include="Resources\Materials\n3.mat" />
+    <None Include="Resources\Materials\Ninja.mat" />
+    <None Include="Resources\Materials\NoButton.mat" />
+    <None Include="Resources\Materials\OptionsButton.mat" />
+    <None Include="Resources\Materials\Orange.mat" />
+    <None Include="Resources\Materials\Particles_PCAI.mat" />
+    <None Include="Resources\Materials\Particles_PCArt.mat" />
+    <None Include="Resources\Materials\Particles_PCDesign.mat" />
+    <None Include="Resources\Materials\Particles_PCGraphics.mat" />
+    <None Include="Resources\Materials\Particles_PCPhysics.mat" />
+    <None Include="Resources\Materials\Particles_PCProg.mat" />
+    <None Include="Resources\Materials\Particles_PCSound.mat" />
+    <None Include="Resources\Materials\Particles_Trail.mat" />
+    <None Include="Resources\Materials\PC.mat" />
+    <None Include="Resources\Materials\PC_AI.mat" />
+    <None Include="Resources\Materials\PC_AR.mat" />
+    <None Include="Resources\Materials\PC_DE.mat" />
+    <None Include="Resources\Materials\PC_GR.mat" />
+    <None Include="Resources\Materials\PC_PH.mat" />
+    <None Include="Resources\Materials\PC_PR.mat" />
+    <None Include="Resources\Materials\PC_SN.mat" />
+    <None Include="Resources\Materials\Physics.mat" />
+    <None Include="Resources\Materials\Pipe.mat" />
+    <None Include="Resources\Materials\Platformer.mat" />
+    <None Include="Resources\Materials\Pong.mat" />
+    <None Include="Resources\Materials\Pool.mat" />
+    <None Include="Resources\Materials\Portal.mat" />
+    <None Include="Resources\Materials\Programming.mat" />
+    <None Include="Resources\Materials\Purple.mat" />
+    <None Include="Resources\Materials\QuitButton.mat" />
+    <None Include="Resources\Materials\Red.mat" />
+    <None Include="Resources\Materials\ResolutionText.mat" />
+    <None Include="Resources\Materials\RestartButton.mat" />
+    <None Include="Resources\Materials\ResumeButton.mat" />
+    <None Include="Resources\Materials\SairajHead.mat" />
+    <None Include="Resources\Materials\SB_CoffeBeans.mat" />
+    <None Include="Resources\Materials\SB_CoffeeMixer.mat" />
+    <None Include="Resources\Materials\SB_Lamp.mat" />
+    <None Include="Resources\Materials\SB_LiTableLight.mat" />
+    <None Include="Resources\Materials\SB_Pastry_UW.mat" />
+    <None Include="Resources\Materials\SB_Trasshcan.mat" />
+    <None Include="Resources\Materials\Science.mat" />
+    <None Include="Resources\Materials\SemiTransparent.mat" />
+    <None Include="Resources\Materials\ShipITLogo.mat" />
+    <None Include="Resources\Materials\Simulation.mat" />
+    <None Include="Resources\Materials\Skybox.mat" />
+    <None Include="Resources\Materials\SN_Background.mat" />
+    <None Include="Resources\Materials\SN_BG.mat" />
+    <None Include="Resources\Materials\SN_Coffee_Wallpaper.mat" />
+    <None Include="Resources\Materials\SN_Color02.mat" />
+    <None Include="Resources\Materials\SN_ColorTower.mat" />
+    <None Include="Resources\Materials\SN_Diagram.mat" />
+    <None Include="Resources\Materials\SN_Wall.mat" />
+    <None Include="Resources\Materials\Space.mat" />
+    <None Include="Resources\Materials\SplashControls.mat" />
+    <None Include="Resources\Materials\Sprint.mat" />
+    <None Include="Resources\Materials\Star.mat" />
+    <None Include="Resources\Materials\SureText.mat" />
+    <None Include="Resources\Materials\Sword.mat" />
+    <None Include="Resources\Materials\T01.mat" />
+    <None Include="Resources\Materials\T02.mat" />
+    <None Include="Resources\Materials\T03.mat" />
+    <None Include="Resources\Materials\T04.mat" />
+    <None Include="Resources\Materials\T05.mat" />
+    <None Include="Resources\Materials\Table.mat" />
+    <None Include="Resources\Materials\Test_White.mat" />
+    <None Include="Resources\Materials\Tetris.mat" />
+    <None Include="Resources\Materials\Thanks.mat" />
+    <None Include="Resources\Materials\Timer_Bar.mat" />
+    <None Include="Resources\Materials\Timer_HUD.mat" />
+    <None Include="Resources\Materials\Time_Coffee.mat" />
+    <None Include="Resources\Materials\Time_DigiPen.mat" />
+    <None Include="Resources\Materials\Time_Mars.mat" />
+    <None Include="Resources\Materials\Time_Seattle.mat" />
+    <None Include="Resources\Materials\ToolAttribution.mat" />
+    <None Include="Resources\Materials\Transparent10.mat" />
+    <None Include="Resources\Materials\Transparent50.mat" />
+    <None Include="Resources\Materials\Transparent80.mat" />
+    <None Include="Resources\Materials\Transparent90.mat" />
+    <None Include="Resources\Materials\TransparentGlass80.mat" />
+    <None Include="Resources\Materials\TrashCan.mat" />
+    <None Include="Resources\Materials\TreadmilH.mat" />
+    <None Include="Resources\Materials\TrevorHead.mat" />
+    <None Include="Resources\Materials\VidhiHead.mat" />
+    <None Include="Resources\Materials\Violet.mat" />
+    <None Include="Resources\Materials\VolperHead.mat" />
+    <None Include="Resources\Materials\War.mat" />
+    <None Include="Resources\Materials\WarningStripes.mat" />
+    <None Include="Resources\Materials\Whiteboard.mat" />
+    <None Include="Resources\Materials\WindowBlack.mat" />
+    <None Include="Resources\Materials\WindowGrey.mat" />
+    <None Include="Resources\Materials\Wood01.mat" />
+    <None Include="Resources\Materials\Wood02.mat" />
+    <None Include="Resources\Materials\Wood03.mat" />
+    <None Include="Resources\Materials\Wood04.mat" />
+    <None Include="Resources\Materials\Wood05.mat" />
+    <None Include="Resources\Materials\World01Logo.mat" />
+    <None Include="Resources\Materials\World02Logo.mat" />
+    <None Include="Resources\Materials\World03Logo.mat" />
+    <None Include="Resources\Materials\Yellow.mat" />
+    <None Include="Resources\Materials\YesButton.mat" />
+    <None Include="Resources\Materials\Zombie.mat" />
+    <None Include="Resources\Prefab\AIResource.json" />
+    <None Include="Resources\Prefab\AlienGame.json" />
+    <None Include="Resources\Prefab\ArtGenerator.json" />
+    <None Include="Resources\Prefab\ArtResource.json" />
+    <None Include="Resources\Prefab\AudioResource.json" />
+    <None Include="Resources\Prefab\Background.json" />
+    <None Include="Resources\Prefab\BgCapsle.json" />
+    <None Include="Resources\Prefab\BgCube.json" />
+    <None Include="Resources\Prefab\BgCylinder10.json" />
+    <None Include="Resources\Prefab\BgCylinder20.json" />
+    <None Include="Resources\Prefab\BgCylinder64.json" />
+    <None Include="Resources\Prefab\BgPlane.json" />
+    <None Include="Resources\Prefab\BgSphere.json" />
+    <None Include="Resources\Prefab\Billboard.json" />
+    <None Include="Resources\Prefab\BirdGame.json" />
+    <None Include="Resources\Prefab\Block.json" />
+    <None Include="Resources\Prefab\BlueResource.json" />
+    <None Include="Resources\Prefab\BomberGame.json" />
+    <None Include="Resources\Prefab\Building.json" />
+    <None Include="Resources\Prefab\Camera.json" />
+    <None Include="Resources\Prefab\CoinGame.json" />
+    <None Include="Resources\Prefab\Container.json" />
+    <None Include="Resources\Prefab\CuantumComputer.json" />
+    <None Include="Resources\Prefab\Cube.json" />
+    <None Include="Resources\Prefab\Cuboid.json" />
+    <None Include="Resources\Prefab\Default.json" />
+    <None Include="Resources\Prefab\DesignGenerator.json" />
+    <None Include="Resources\Prefab\DesignResource.json" />
+    <None Include="Resources\Prefab\DiceGame.json" />
+    <None Include="Resources\Prefab\DragonGame.json" />
+    <None Include="Resources\Prefab\DRLight.json" />
+    <None Include="Resources\Prefab\FighterGame.json" />
+    <None Include="Resources\Prefab\FoodGame.json" />
+    <None Include="Resources\Prefab\FPSGame.json" />
+    <None Include="Resources\Prefab\Gate.json" />
+    <None Include="Resources\Prefab\Generator.json" />
+    <None Include="Resources\Prefab\GraphicsProcessor.json" />
+    <None Include="Resources\Prefab\GraphicsResource.json" />
+    <None Include="Resources\Prefab\GreenResource.json" />
+    <None Include="Resources\Prefab\Grid.json" />
+    <None Include="Resources\Prefab\GridCell.json" />
+    <None Include="Resources\Prefab\GridWaypoint.json" />
+    <None Include="Resources\Prefab\Ground.json" />
+    <None Include="Resources\Prefab\Group.json" />
+    <None Include="Resources\Prefab\HorrorGame.json" />
+    <None Include="Resources\Prefab\InvisibleCube.json" />
+    <None Include="Resources\Prefab\KeyGame.json" />
+    <None Include="Resources\Prefab\LevelButton.json" />
+    <None Include="Resources\Prefab\Light.json" />
+    <None Include="Resources\Prefab\LoadingScreen.json" />
+    <None Include="Resources\Prefab\LogicObject.json" />
+    <None Include="Resources\Level\PartyProcessSandbox.json" />
+    <None Include="Resources\Prefab\LunkGame.json" />
+    <None Include="Resources\Prefab\MainScreen.json" />
+    <None Include="Resources\Prefab\MazeGame.json" />
+    <None Include="Resources\Prefab\Menu.json" />
+    <None Include="Resources\Prefab\MR_Spaceship.json" />
+    <None Include="Resources\Prefab\MusicObject.json" />
+    <None Include="Resources\Prefab\NinjaGame.json" />
+    <None Include="Resources\Prefab\OrangeResource.json" />
+    <None Include="Resources\Prefab\PC_AI.json" />
+    <None Include="Resources\Prefab\PC_AR.json" />
+    <None Include="Resources\Prefab\PC_DE.json" />
+    <None Include="Resources\Prefab\PC_GR.json" />
+    <None Include="Resources\Prefab\PC_IA.json" />
+    <None Include="Resources\Prefab\PC_PH.json" />
+    <None Include="Resources\Prefab\PC_PR.json" />
+    <None Include="Resources\Prefab\PC_SN.json" />
+    <None Include="Resources\Prefab\PhysicsProcessor.json" />
+    <None Include="Resources\Prefab\PhysicsResource.json" />
+    <None Include="Resources\Prefab\PipeGame.json" />
+    <None Include="Resources\Prefab\Platform.json" />
+    <None Include="Resources\Prefab\PlatformerGame.json" />
+    <None Include="Resources\Prefab\Player.json" />
+    <None Include="Resources\Prefab\PlayerBody.json" />
+    <None Include="Resources\Prefab\Players.json" />
+    <None Include="Resources\Prefab\PongGame.json" />
+    <None Include="Resources\Prefab\PoolGame.json" />
+    <None Include="Resources\Prefab\PortalGame.json" />
+    <None Include="Resources\Prefab\PrefVolper.json" />
+    <None Include="Resources\Prefab\Pref_PC_AI.json" />
+    <None Include="Resources\Prefab\Pref_PC_AR.json" />
+    <None Include="Resources\Prefab\Pref_PC_DE.json" />
+    <None Include="Resources\Prefab\Pref_PC_GR.json" />
+    <None Include="Resources\Prefab\Pref_PC_PH.json" />
+    <None Include="Resources\Prefab\PREF_PC_PHY.json" />
+    <None Include="Resources\Prefab\Pref_PC_PR.json" />
+    <None Include="Resources\Prefab\Pref_PC_SN.json" />
+    <None Include="Resources\Prefab\Pref_Waypoint.json" />
+    <None Include="Resources\Prefab\Prf_PcAI.json" />
+    <None Include="Resources\Prefab\Prf_PcAR.json" />
+    <None Include="Resources\Prefab\Prf_PcDE.json" />
+    <None Include="Resources\Prefab\Prf_PcGR.json" />
+    <None Include="Resources\Prefab\Prf_PcPh.json" />
+    <None Include="Resources\Prefab\Prf_PcPR.json" />
+    <None Include="Resources\Prefab\Prf_PcSN.json" />
+    <None Include="Resources\Prefab\PRF_PC_GRP.json" />
+    <None Include="Resources\Prefab\Prf_Spaceneedle.json" />
+    <None Include="Resources\Prefab\Prf_Spaceneelde.json" />
+    <None Include="Resources\Prefab\Prf_Treadmill.json" />
+    <None Include="Resources\Prefab\Processor.json" />
+    <None Include="Resources\Prefab\ProgrammingGenerator.json" />
+    <None Include="Resources\Prefab\ProgrammingResource.json" />
+    <None Include="Resources\Prefab\PurpleResource.json" />
+    <None Include="Resources\Prefab\QuantumComputer.json" />
+    <None Include="Resources\Prefab\RedResource.json" />
+    <None Include="Resources\Prefab\Resource.json" />
+    <None Include="Resources\Prefab\Scale.json" />
+    <None Include="Resources\Prefab\ScienceGame.json" />
+    <None Include="Resources\Prefab\ScriptedBackground.json" />
+    <None Include="Resources\Prefab\ScriptedEnvironment.json" />
+    <None Include="Resources\Prefab\SearchArea.json" />
+    <None Include="Resources\Prefab\SimulationGame.json" />
+    <None Include="Resources\Prefab\Skybox.json" />
+    <None Include="Resources\Prefab\SofaIvan.json" />
+    <None Include="Resources\Prefab\SoundProcessor.json" />
+    <None Include="Resources\Prefab\SpaceGame.json" />
+    <None Include="Resources\Prefab\Sphere.json" />
+    <None Include="Resources\Prefab\StarGame.json" />
+    <None Include="Resources\Prefab\SubmissionArea.json" />
+    <None Include="Resources\Prefab\SwordGame.json" />
+    <None Include="Resources\Prefab\Teleport.json" />
+    <None Include="Resources\Prefab\TetrisGame.json" />
+    <None Include="Resources\Prefab\Tutorial01.json" />
+    <None Include="Resources\Prefab\UI.json" />
+    <None Include="Resources\Prefab\SpotLight.json" />
+    <None Include="Resources\Materials\Ant.mat" />
+    <None Include="Resources\Materials\White.mat" />
+    <None Include="Resources\Materials\Green.mat" />
+    <None Include="Resources\Materials\Man0.mat" />
+    <None Include="Resources\AffineAnimations\Turn.aat" />
+    <None Include="Resources\Materials\Noise0.mat" />
+    <None Include="Resources\Materials\Noise1.mat" />
+    <None Include="Resources\Materials\Presentation.mat" />
+    <None Include="Resources\Prefab\WarGame.json" />
+    <None Include="Resources\Prefab\YellowResource.json" />
+    <None Include="Resources\Prefab\ZombieGame.json" />
+    <None Include="Resources\Scripts\ArtResourceGenerator.py" />
+    <None Include="Resources\Scripts\BlockInput.py" />
+    <None Include="Resources\Scripts\BlockOutput.py" />
+    <None Include="Resources\Scripts\character_control.py" />
+    <None Include="Resources\Scripts\Container.py" />
+    <None Include="Resources\Scripts\ContainerInput.py" />
+    <None Include="Resources\Scripts\ContainerOutput.py" />
+    <None Include="Resources\Scripts\Credits.py" />
+    <None Include="Resources\Scripts\CreditSequence.py" />
+    <None Include="Resources\Scripts\default.py" />
+    <None Include="Resources\Scripts\DesignResourceGenerator.py" />
+    <None Include="Resources\Scripts\GameLogic.py" />
+    <None Include="Resources\Scripts\GateSFX.py" />
+    <None Include="Resources\Scripts\GeneratorInput.py" />
+    <None Include="Resources\Scripts\GeneratorOutput.py" />
+    <None Include="Resources\Scripts\GreenRecipe.py" />
+    <None Include="Resources\Scripts\GridCell.py" />
+    <None Include="Resources\Scripts\GridCellInput.py" />
+    <None Include="Resources\Scripts\GridCellOutput.py" />
+    <None Include="Resources\Scripts\MenuControl.py" />
+    <None Include="Resources\Scripts\IntroSequence.py" />
+    <None Include="Resources\Scripts\LevelButton.py" />
+    <None Include="Resources\Scripts\LevelScreen.py" />
+    <None Include="Resources\Scripts\MainMenu.py" />
+    <None Include="Resources\Scripts\MovingPlatform.py" />
+    <None Include="Resources\Scripts\PartyCam.py" />
+    <None Include="Resources\Scripts\PartyCamTEST.py" />
+    <None Include="Resources\Scripts\PickupProcessor.py" />
+    <None Include="Resources\Scripts\PlatformRelationship.py" />
+    <None Include="Resources\Scripts\PlayerDrop.py" />
+    <None Include="Resources\Scripts\PlayerPickup.py" />
+    <None Include="Resources\Scripts\ProcessorGenerate.py" />
+    <None Include="Resources\Scripts\ProcessorInput.py" />
+    <None Include="Resources\Scripts\ProcessorOutput.py" />
+    <None Include="Resources\Scripts\ProgrammingResourceGenerator.py" />
+    <None Include="Resources\Scripts\RequestUI.py" />
+    <None Include="Resources\Scripts\Reset.py" />
+    <None Include="Resources\Scripts\Treadmill.py" />
+    <None Include="Resources\Scripts\WaypointTeleport.py" />
+    <None Include="Resources\Shaders\Demo.frag" />
+    <None Include="Resources\Shaders\Demo.vert" />
+    <None Include="Resources\Shaders\Line.frag" />
+    <None Include="Resources\Shaders\Line.vert" />
+    <None Include="Resources\Shaders\Outline.frag" />
+    <None Include="Resources\Shaders\Outline.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\Localization\en\hello.txt" />
+    <Text Include="Resources\Localization\en\thankyou.txt" />
+    <Text Include="Resources\Localization\ru\hello.txt" />
+    <Text Include="Resources\Localization\ru\thankyou.txt" />
+    <Text Include="Resources\Text\Default.txt" />
+    <Text Include="Resources\Text\GameRecipes.txt" />
+    <Text Include="Resources\Text\ResourceRecipes.txt" />
+    <Text Include="Resources\Text\UnlockLevelData.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project1\GearEngine.vcxproj">
+      <Project>{1147ae74-3e6f-41f6-98b9-871ac41b33ca}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Resources\Audio\BG01.mp3" />
+    <Media Include="Resources\Audio\BG01Ending.mp3" />
+    <Media Include="Resources\Audio\BG02.mp3" />
+    <Media Include="Resources\Audio\BG03.mp3" />
+    <Media Include="Resources\Audio\button_click.wav" />
+    <Media Include="Resources\Audio\cartoon_fall-002.wav" />
+    <Media Include="Resources\Audio\cartoon_jump-002.wav" />
+    <Media Include="Resources\Audio\coding03.mp3" />
+    <Media Include="Resources\Audio\Credits.mp3" />
+    <Media Include="Resources\Audio\GameDeliver01.mp3" />
+    <Media Include="Resources\Audio\GameFinish.mp3" />
+    <Media Include="Resources\Audio\GameMaker03-01.mp3" />
+    <Media Include="Resources\Audio\GameMaker03.mp3" />
+    <Media Include="Resources\Audio\I_A.mp3" />
+    <Media Include="Resources\Audio\I_D.mp3" />
+    <Media Include="Resources\Audio\I_P.mp3" />
+    <Media Include="Resources\Audio\LevelScreen.mp3" />
+    <Media Include="Resources\Audio\Main.mp3" />
+    <Media Include="Resources\Audio\MergingMaster02.mp3" />
+    <Media Include="Resources\Audio\ModuleDeliver01.mp3" />
+    <Media Include="Resources\Audio\warningTimeOut.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PartyProcess.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Resources\Fonts\OCRAEXT.TTF" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

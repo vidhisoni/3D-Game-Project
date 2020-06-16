@@ -1,0 +1,690 @@
+{
+	"Animator" : 
+	{
+		"AffineStates" : [],
+		"DefaultAffineState" : "None",
+		"DefaultSkeletalState" : "None",
+		"SkeletalStates" : {}
+	},
+	"Audio" : 
+	{
+		"Loop" : false,
+		"mSoundName" : "",
+		"mStartPlaying" : false,
+		"mVolume" : 1.0
+	},
+	"Block" : 
+	{
+		"CanInput" : false
+	},
+	"Body" : 
+	{
+		"mApplyFriction" : true,
+		"mConstrainX" : false,
+		"mConstrainY" : false,
+		"mConstrainZ" : false,
+		"mMass" : 0.0,
+		"mUseGravity" : false
+	},
+	"Carrier" : 
+	{
+		"ItemIndices" : []
+	},
+	"Children" : 
+	[
+		{
+			"Animator" : 
+			{
+				"AffineStates" : [],
+				"DefaultAffineState" : "None",
+				"DefaultSkeletalState" : "None",
+				"SkeletalStates" : {}
+			},
+			"DataFile" : "Background",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"CastsShadow" : false,
+				"IgnoreCamera" : false,
+				"IsBillboard" : false,
+				"IsUI" : false,
+				"Material" : "Color_BlueDark",
+				"MeshMaterials" : 
+				[
+					"None"
+				],
+				"Model" : "Cube",
+				"Renderable" : true
+			},
+			"Name" : "Sofa",
+			"Transform" : 
+			{
+				"RotationAngles" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Scale" : 
+				[
+					0.71932893991470337,
+					0.69936209917068481,
+					0.13367092609405518
+				],
+				"Translate" : 
+				[
+					0.21839475631713867,
+					0.48842412233352661,
+					-0.43891811370849609
+				]
+			},
+			"Type" : "Background"
+		},
+		{
+			"Animator" : 
+			{
+				"AffineStates" : [],
+				"DefaultAffineState" : "None",
+				"DefaultSkeletalState" : "None",
+				"SkeletalStates" : {}
+			},
+			"DataFile" : "Background",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"CastsShadow" : false,
+				"IgnoreCamera" : false,
+				"IsBillboard" : false,
+				"IsUI" : false,
+				"Material" : "Color_BlueDark",
+				"MeshMaterials" : 
+				[
+					"None"
+				],
+				"Model" : "Cube",
+				"Renderable" : true
+			},
+			"Name" : "Sofa",
+			"Transform" : 
+			{
+				"RotationAngles" : 
+				[
+					0.0,
+					0.0,
+					0.0
+				],
+				"Scale" : 
+				[
+					0.49079641699790955,
+					0.97322851419448853,
+					0.9852067232131958
+				],
+				"Translate" : 
+				[
+					0.55491399765014648,
+					0.57639235258102417,
+					0.051383137702941895
+				]
+			},
+			"Type" : "Background"
+		},
+		{
+			"Animator" : 
+			{
+				"AffineStates" : [],
+				"DefaultAffineState" : "None",
+				"DefaultSkeletalState" : "None",
+				"SkeletalStates" : {}
+			},
+			"DataFile" : "Background",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"CastsShadow" : false,
+				"IgnoreCamera" : false,
+				"IsBillboard" : false,
+				"IsUI" : false,
+				"Material" : "Color_BlueDark",
+				"MeshMaterials" : 
+				[
+					"None"
+				],
+				"Model" : "Cylinder20",
+				"Renderable" : true
+			},
+			"Name" : "Sofa",
+			"Transform" : 
+			{
+				"RotationAngles" : 
+				[
+					-89.999946594238281,
+					-0.0,
+					0.0
+				],
+				"Scale" : 
+				[
+					0.37238773703575134,
+					5.3341937065124512,
+					0.11762907356023788
+				],
+				"Translate" : 
+				[
+					0.49287796020507813,
+					1.0119819641113281,
+					0.017988324165344238
+				]
+			},
+			"Type" : "Background"
+		},
+		{
+			"Children" : 
+			[
+				{
+					"Animator" : 
+					{
+						"AffineStates" : 
+						[
+							{
+								"AffineAnimationName" : "Float",
+								"BlendDuration" : 0.30000001192092896,
+								"ReturnToDefault" : true,
+								"StateName" : "Float"
+							}
+						],
+						"DefaultAffineState" : "Float",
+						"DefaultSkeletalState" : "None",
+						"SkeletalStates" : {}
+					},
+					"DataFile" : "Background",
+					"IsEnabled" : true,
+					"ModelComponent" : 
+					{
+						"CastsShadow" : false,
+						"IgnoreCamera" : false,
+						"IsBillboard" : false,
+						"IsUI" : false,
+						"Material" : "FlatRed",
+						"MeshMaterials" : 
+						[
+							"None"
+						],
+						"Model" : "DP_Z",
+						"Renderable" : true
+					},
+					"Name" : "Background",
+					"Transform" : 
+					{
+						"RotationAngles" : 
+						[
+							4.620490550994873,
+							-19.28480339050293,
+							-1.6564168618060648e-05
+						],
+						"Scale" : 
+						[
+							0.1887085884809494,
+							0.18875393271446228,
+							0.18875420093536377
+						],
+						"Translate" : 
+						[
+							14.130642890930176,
+							4.8226418495178223,
+							5.5370316505432129
+						]
+					},
+					"Type" : "Background"
+				},
+				{
+					"Animator" : 
+					{
+						"AffineStates" : 
+						[
+							{
+								"AffineAnimationName" : "Float",
+								"BlendDuration" : 0.30000001192092896,
+								"ReturnToDefault" : true,
+								"StateName" : "Float"
+							}
+						],
+						"DefaultAffineState" : "Float",
+						"DefaultSkeletalState" : "None",
+						"SkeletalStates" : {}
+					},
+					"DataFile" : "Background",
+					"IsEnabled" : true,
+					"ModelComponent" : 
+					{
+						"CastsShadow" : false,
+						"IgnoreCamera" : false,
+						"IsBillboard" : false,
+						"IsUI" : false,
+						"Material" : "FlatRed",
+						"MeshMaterials" : 
+						[
+							"None"
+						],
+						"Model" : "DP_Z",
+						"Renderable" : true
+					},
+					"Name" : "Background",
+					"Transform" : 
+					{
+						"RotationAngles" : 
+						[
+							4.620490550994873,
+							-19.28480339050293,
+							-1.6564168618060648e-05
+						],
+						"Scale" : 
+						[
+							0.25717133283615112,
+							0.25723344087600708,
+							0.25723358988761902
+						],
+						"Translate" : 
+						[
+							13.814314842224121,
+							4.845212459564209,
+							5.1305203437805176
+						]
+					},
+					"Type" : "Background"
+				},
+				{
+					"Animator" : 
+					{
+						"AffineStates" : 
+						[
+							{
+								"AffineAnimationName" : "Float",
+								"BlendDuration" : 0.30000001192092896,
+								"ReturnToDefault" : true,
+								"StateName" : "Float"
+							}
+						],
+						"DefaultAffineState" : "Float",
+						"DefaultSkeletalState" : "None",
+						"SkeletalStates" : {}
+					},
+					"DataFile" : "Background",
+					"IsEnabled" : true,
+					"ModelComponent" : 
+					{
+						"CastsShadow" : false,
+						"IgnoreCamera" : false,
+						"IsBillboard" : false,
+						"IsUI" : false,
+						"Material" : "FlatRed",
+						"MeshMaterials" : 
+						[
+							"None"
+						],
+						"Model" : "DP_Z",
+						"Renderable" : true
+					},
+					"Name" : "Background",
+					"Transform" : 
+					{
+						"RotationAngles" : 
+						[
+							4.6204490661621094,
+							-19.284688949584961,
+							-3.7311751839297358e-06
+						],
+						"Scale" : 
+						[
+							0.46531087160110474,
+							0.4654233455657959,
+							0.46542352437973022
+						],
+						"Translate" : 
+						[
+							13.354866027832031,
+							4.8757729530334473,
+							4.5690507888793945
+						]
+					},
+					"Type" : "Background"
+				}
+			],
+			"DataFile" : "Group",
+			"IsEnabled" : true,
+			"Name" : "ZZZ",
+			"Transform" : 
+			{
+				"RotationAngles" : 
+				[
+					0.0,
+					-0.0,
+					0.0
+				],
+				"Scale" : 
+				[
+					0.37238773703575134,
+					0.6667742133140564,
+					0.11762907356023788
+				],
+				"Translate" : 
+				[
+					-5.7176780700683594,
+					-0.53930497169494629,
+					-1.0115648508071899
+				]
+			},
+			"Type" : "Group"
+		},
+		{
+			"Animator" : 
+			{
+				"AffineStates" : [],
+				"DefaultAffineState" : "None",
+				"DefaultSkeletalState" : "None",
+				"SkeletalStates" : {}
+			},
+			"Children" : 
+			[
+				{
+					"Animator" : 
+					{
+						"AffineStates" : [],
+						"DefaultAffineState" : "None",
+						"DefaultSkeletalState" : "None",
+						"SkeletalStates" : {}
+					},
+					"DataFile" : "Background",
+					"IsEnabled" : true,
+					"ModelComponent" : 
+					{
+						"CastsShadow" : false,
+						"IgnoreCamera" : false,
+						"IsBillboard" : false,
+						"IsUI" : false,
+						"Material" : "HandsIvan",
+						"MeshMaterials" : 
+						[
+							"None"
+						],
+						"Model" : "Sphere",
+						"Renderable" : true
+					},
+					"Name" : "Hand",
+					"Transform" : 
+					{
+						"RotationAngles" : 
+						[
+							81.568466186523438,
+							20.264404296875,
+							-87.060806274414063
+						],
+						"Scale" : 
+						[
+							0.30666661262512207,
+							0.30666676163673401,
+							0.30666670203208923
+						],
+						"Translate" : 
+						[
+							-0.41674339771270752,
+							0.98575764894485474,
+							0.50490856170654297
+						]
+					},
+					"Type" : "Background"
+				},
+				{
+					"Animator" : 
+					{
+						"AffineStates" : [],
+						"DefaultAffineState" : "None",
+						"DefaultSkeletalState" : "None",
+						"SkeletalStates" : {}
+					},
+					"DataFile" : "Background",
+					"IsEnabled" : true,
+					"ModelComponent" : 
+					{
+						"CastsShadow" : false,
+						"IgnoreCamera" : false,
+						"IsBillboard" : false,
+						"IsUI" : false,
+						"Material" : "HandsIvan",
+						"MeshMaterials" : 
+						[
+							"None"
+						],
+						"Model" : "Sphere",
+						"Renderable" : true
+					},
+					"Name" : "Hand",
+					"Transform" : 
+					{
+						"RotationAngles" : 
+						[
+							81.568466186523438,
+							20.264404296875,
+							-87.060806274414063
+						],
+						"Scale" : 
+						[
+							0.30666661262512207,
+							0.30666676163673401,
+							0.30666670203208923
+						],
+						"Translate" : 
+						[
+							-0.30327355861663818,
+							0.68172764778137207,
+							0.54991912841796875
+						]
+					},
+					"Type" : "Background"
+				},
+				{
+					"Animator" : 
+					{
+						"AffineStates" : [],
+						"DefaultAffineState" : "None",
+						"DefaultSkeletalState" : "None",
+						"SkeletalStates" : {}
+					},
+					"DataFile" : "Background",
+					"IsEnabled" : true,
+					"ModelComponent" : 
+					{
+						"CastsShadow" : false,
+						"IgnoreCamera" : false,
+						"IsBillboard" : false,
+						"IsUI" : false,
+						"Material" : "IvanHead",
+						"MeshMaterials" : 
+						[
+							"None"
+						],
+						"Model" : "IvanHead",
+						"Renderable" : true
+					},
+					"Name" : "IvanHead",
+					"Transform" : 
+					{
+						"RotationAngles" : 
+						[
+							-5.2905349731445313,
+							-31.361705780029297,
+							-1.0638351440429688
+						],
+						"Scale" : 
+						[
+							1.0,
+							1.0,
+							1.0
+						],
+						"Translate" : 
+						[
+							-0.32119977474212646,
+							1.0599877834320068,
+							0.19209671020507813
+						]
+					},
+					"Type" : "Background"
+				}
+			],
+			"DataFile" : "Background",
+			"IsEnabled" : true,
+			"ModelComponent" : 
+			{
+				"CastsShadow" : false,
+				"IgnoreCamera" : false,
+				"IsBillboard" : false,
+				"IsUI" : false,
+				"Material" : "BodyYellow",
+				"MeshMaterials" : 
+				[
+					"None"
+				],
+				"Model" : "Body",
+				"Renderable" : true
+			},
+			"Name" : "Ivan",
+			"Transform" : 
+			{
+				"RotationAngles" : 
+				[
+					-81.568466186523438,
+					-20.264404296875,
+					87.060806274414063
+				],
+				"Scale" : 
+				[
+					0.55858159065246582,
+					1.0001610517501831,
+					0.17644360661506653
+				],
+				"Translate" : 
+				[
+					0.19121265411376953,
+					0.63261574506759644,
+					-0.11757725477218628
+				]
+			},
+			"Type" : "Background"
+		}
+	],
+	"Collider" : 
+	{
+		"Offset" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Rescale" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"mCoeffDynamicFriction" : 0.10000000149011612,
+		"mCoeffStaticFriction" : 0.10000000149011612,
+		"mDepth" : -1.0,
+		"mHeight" : -1.0,
+		"mIsTrigger" : false,
+		"mLType" : "Block",
+		"mRadius" : -1.0,
+		"mShape" : "OBB",
+		"mWidth" : -1.0
+	},
+	"IsEnabled" : true,
+	"ModelComponent" : 
+	{
+		"CastsShadow" : false,
+		"IgnoreCamera" : false,
+		"IsBillboard" : false,
+		"IsUI" : false,
+		"Material" : "Color_BlueDark",
+		"MeshMaterials" : 
+		[
+			"None"
+		],
+		"Model" : "Cube",
+		"Renderable" : true
+	},
+	"Name" : "Sofa",
+	"ParticlesComponent" : 
+	{
+		"Active Time" : 1.1754943508222875e-38,
+		"Color" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Direction" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Effect" : -1,
+		"Life" : 0.0,
+		"Material Name" : "",
+		"Minimum Number Of Particles" : 1,
+		"Number of Particles" : 0,
+		"Position" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Range" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Scale" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"Texture" : false,
+		"Velocity" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		]
+	},
+	"ScriptComponent" : 
+	{
+		"always-run" : false,
+		"scripts" : 
+		[
+			".\\Resources\\Scripts\\BlockInput.py",
+			".\\Resources\\Scripts\\BlockOutput.py"
+		]
+	},
+	"Transform" : 
+	{
+		"RotationAngles" : 
+		[
+			0.0,
+			-0.0,
+			0.0
+		],
+		"Scale" : 
+		[
+			2.685373067855835,
+			1.4997581243515015,
+			8.5012998580932617
+		],
+		"Translate" : 
+		[
+			15.354098320007324,
+			0.80885148048400879,
+			2.0996074676513672
+		]
+	},
+	"Type" : "Block"
+}

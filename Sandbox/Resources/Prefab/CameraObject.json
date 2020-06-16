@@ -1,0 +1,21 @@
+{
+  "Type": "Camera",
+  "ScriptComponent": {
+    "scripts": [ ".\\Resources\\Scripts\\default.py" ],
+    "always-run": true
+  },
+  "Controller": {
+    "player": 0
+  },
+  "Camera": {
+    "FieldOfView": 45.0,
+    "Near": 0.01,
+    "FarPlane": 1000.0,
+    "IsDefault": false
+  },
+  "Transform": {
+    "Scale": [ 0.1, 0.1, 0.1 ],
+    "Translate": [ 0.0, 0, 0.0 ],
+    "RotationAngles": [ 0.0, 0.0, 0.0 ]
+  }
+}

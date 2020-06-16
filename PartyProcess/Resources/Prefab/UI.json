@@ -1,0 +1,20 @@
+{
+  "Type": "UI",
+  "IsEnabled": true,
+  "UIComponent": {
+    "Type": "Image",
+    "MenuIndex": -1
+  },
+  "Transform": {
+    "Scale": [ 1.0, 1.0, 1.0 ],
+    "Translate": [ 1.0, 1.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "Quad",
+    "Renderable": true,
+    "CastsShadow": false,
+    "IsUI": true
+  },
+  "Audio": {
+  }
+}

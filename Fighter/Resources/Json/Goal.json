@@ -1,0 +1,39 @@
+{
+  "Type": "Goal",
+  "Transform": {
+    "Scale": [ 5.0, 10.0, 15.0 ],
+    "Translate": [ 0.0, 0.0, 0.0 ],
+    "RotationAngles": [ 0.0, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "Cube",
+    "Material": "Blue",
+    "Renderable": true,
+    "CastsShadow": true
+  },
+  "Body": {
+    "mPos": 0.0,
+    "mPrevPos": 0.0,
+    "mVel": 0.0,
+    "mAcc": 0.0,
+    "mMass": 0,
+    "mTotalForce": 0.0,
+    "constantVelocity": 0.0,
+    "applyFriction": true,
+    "isConstantVelocitySet": false,
+    "constrainX": false,
+    "constrainY": false,
+    "mUseGravity": false
+  },
+  "Collider": {
+    "mLType": "Goal",
+    "mShape": "AABB",
+    "isTrigger": true
+  },
+  "ScriptComponent": {
+    "scripts": [ ".\\Resources\\Scripts\\goal_logic.py" ]
+  },
+  "Audio": {
+    "mSoundName": ""
+  }
+}

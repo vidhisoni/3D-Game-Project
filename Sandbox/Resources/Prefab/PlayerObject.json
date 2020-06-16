@@ -1,0 +1,84 @@
+{
+  "Type": "PlayerObject",
+  "Transform": {
+    "Scale": [ 2.0, 2.0, 2.0 ],
+    "Translate": [ 0.0, 0.0, 0.0 ],
+    "RotationAngles": [ -90, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "Mannequin",
+    "MeshMaterials": [ "Blue" ],
+    "Renderable": true,
+    "CastsShadow": true
+  },
+  "Body": {
+    "mPos": 0.0,
+    "mPrevPos": 0.0,
+    "mVel": 0.0,
+    "mAcc": 0.0,
+    "mTotalForce": 0.0,
+    "constantVelocity": 200.0,
+    "applyFriction": true,
+    "mMass": 1.0,
+    "isConstantVelocitySet": true,
+    "mConstrainX": false,
+    "mConstrainY": false,
+    "mConstrainZ": false,
+    "mUseGravity": true
+  },
+  "Collider": {
+    "mLType": "Player",
+    "mShape": "AABB",
+    "Offset": [
+      0.0, 1.0, 0.0
+    ]
+  },
+  "Animator": {
+    "AffineStates": [
+      {
+        "StateName": "HopRight",
+        "AffineAnimationName": "Default",
+        "BlendDuration": 0.3,
+        "ReturnToDefault": true
+      },
+      {
+        "StateName": "BoxRight",
+        "AffineAnimationName": "Box",
+        "BlendDuration": 0.3,
+        "ReturnToDefault": true
+      }
+    ],
+    "DefaultAffineState": "None",
+    "SkeletalStates": [
+      {
+        "StateName": "Idle",
+        "SkeletalAnimationName": "idle",
+        "BlendDuration": 0.3,
+        "ReturnToDefault": true
+      },
+      {
+        "StateName": "Walk",
+        "SkeletalAnimationName": "standard_run",
+        "BlendDuration": 0.3,
+        "ReturnToDefault": true
+      },
+      {
+        "StateName": "Jump",
+        "SkeletalAnimationName": "jump",
+        "BlendDuration": 1.0,
+        "ReturnToDefault": true
+      }
+    ],
+    "DefaultSkeletalState": "Idle"
+  },
+  "ScriptComponent": {
+    "scripts": [ ".\\Resources\\Scripts\\character_control.py" ]
+  },
+  "Controller": {
+    "player": 0
+  },
+  "Player": {
+
+  }
+
+}

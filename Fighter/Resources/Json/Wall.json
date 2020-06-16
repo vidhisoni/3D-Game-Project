@@ -1,0 +1,35 @@
+{
+  "Type": "Wall",
+  "Transform": {
+    "Scale": [ 1.0, 2.0, 1.0 ],
+    "Translate": [ 0.0, 0.0, 0.0 ],
+    "RotationAngles": [ 0.0, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "Cube",
+    "Material": "Orange",
+    "Renderable": true,
+    "CastsShadow": true
+  },
+  "Body": {
+    "mPos": 0.0,
+    "mPrevPos": 0.0,
+    "mVel": 0.0,
+    "mAcc": 0.0,
+    "mMass": 0,
+    "mTotalForce": 0.0,
+    "constantVelocity": 0.0,
+    "applyFriction": true,
+    
+    "isConstantVelocitySet": false,
+    "constrainX": false,
+    "constrainY": false,
+    "mUseGravity": false
+  },
+  "Collider": {
+    "mLType": "Side",
+    "mShape": "AABB",
+    "isTrigger": false,
+    "mCoeffRestitution": 1.5
+  }
+}

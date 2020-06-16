@@ -1,0 +1,60 @@
+{
+  "MapPauseMenu": [
+    {
+      "DataFile": "Menu",
+      "Name": "Map Pause Selection",
+      "Children": [
+        {
+          "Name": "Button1",
+          "DataFile": "UI",
+          "UIComponent": {
+            "Type": "Button",
+            "Label": "Resume",
+            "Action": ""
+          },
+          "Transform": {
+            "Translate": [ 0.425, 0.175, 0.0 ],
+            "Scale": [ 0.15, 0.07, 0.0 ]
+          },
+          "ModelComponent": {
+            "Material": "RsmMpBtn"
+          }
+        },
+        {
+          "Name": "Button2",
+          "DataFile": "UI",
+          "UIComponent": {
+            "Type": "Button",
+            "Label": "Yes",
+            "Action": "MainMenu"
+          },
+          "Transform": {
+            "Translate": [ 0.425, 0.325, 0.0 ],
+            "Scale": [ 0.15, 0.07, 0.0 ]
+          },
+          "ModelComponent": {
+            "Material": "MenuButton"
+          }
+        },
+        {
+          "Name": "Button3",
+          "DataFile": "UI",
+          "UIComponent": {
+            "Type": "Button",
+             "Label": "Quit",
+            "Action": "QuitConfirmation"
+          },
+          "Transform": {
+            "Translate": [ 0.425, 0.475, 0.0 ],
+            "Scale": [ 0.15, 0.07, 0.0 ]
+          },
+          "ModelComponent": {
+            "Material": "QuitButton"
+          }
+        } 
+ 
+      ]
+    }
+  ]
+
+}

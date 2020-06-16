@@ -1,0 +1,22 @@
+{
+  "Type": "SpotLight",
+  "Transform": {
+    "Scale": [ 0.1, 0.1, 0.1 ],
+    "Translate": [ 0.0, 0.0, 0.0 ],
+    "RotationAngles": [ 0.0, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "Sphere",
+    "Material": "DRLight",
+    "Renderable": true,
+    "CastsShadow": false
+  },
+  "SpotLight": {
+    "Intensity": 1.0,
+    "Range": 10.0,
+    "SpotAngle": 30.0,
+    "Direction": [ 0.0, -1.0, -1.0 ],
+    "Color": [ 1.0, 1.0, 1.0 ],
+    "ClapOn": true
+  }
+}

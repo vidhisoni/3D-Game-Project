@@ -1,0 +1,9 @@
+{
+  "Type": "Camera",
+  "ScriptComponent": {
+    "scripts": [ ".\\Resources\\Scripts\\simple_cam_control.py" ]
+  },
+  "Controller": {
+    "player": 0
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "Type": "Ground",
+  "Transform": {
+    "Scale": [ 20.0, 20.0, 20.0 ],
+    "Translate": [ 0.0, -1.2, 0.0 ],
+    "RotationAngles": [ -90.0, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "Quad",
+    "Material": "Ground",
+    "Renderable": true,
+    "CastsShadow": true
+  }
+}

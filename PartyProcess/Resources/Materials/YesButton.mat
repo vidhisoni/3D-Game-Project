@@ -1,0 +1,7 @@
+{
+  "DiffuseTexture": "btnYes",
+  "Diffuse": [ 0.0, 0.23137254902, 0.33333333333, 1.0 ],
+  "Specular": [ 0.0, 0.4862745098, 0.70980392156 ],
+  "Shininess": 10.0,
+  "Shader": "DRLighting"
+}

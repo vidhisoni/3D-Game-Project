@@ -1,0 +1,21 @@
+{
+	"AdditiveBlending" : false,
+	"Diffuse" : 
+	[
+		0.80000000000000004,
+		0.80000000000000004,
+		0.80000000000000004,
+		1.0
+	],
+	"DiffuseTexture" : "brickwall",
+	"NormalMap" : "brickwall_normal",
+	"Shader" : null,
+	"Shininess" : 60.0,
+	"Specular" : 
+	[
+		0.42156863212585449,
+		0.42156440019607544,
+		0.42156440019607544
+	],
+	"UseLighting" : true
+}

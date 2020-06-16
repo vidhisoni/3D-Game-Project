@@ -1,0 +1,43 @@
+{
+  "TestLevel": [
+    {
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Orange"
+      },
+      "Transform": {
+        "Scale": [ 0.5, 0.5, 0.5 ],
+        "Translate": [ 0.0, 0.0, 0.0 ]
+      }
+    },
+
+    {
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Orange"
+      },
+      "Transform": {
+        "Scale": [ 0.5, 0.5, 0.5 ],
+        "Translate": [ 0.0, -3.0, 0.0 ]
+      },
+      "Collider": {
+        "coeffRestitution": 0.2,
+        "coeffStaticFriction": 0.2,
+        "coeffDynamicFriction": 0.2
+      },
+      "Body": {
+        "useGravity": false
+      }
+    },
+
+    {
+      "DataFile": "DRLight"
+    },
+    {
+      "DataFile": "Skybox"
+    }
+
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "Type": "CameraObject",
+  "ScriptComponent": {
+    "scripts": [ ".\\Resources\\Scripts\\default.py" ]
+  },
+  "Controller": {
+    "player": -1
+  },
+  "Camera": {
+    "Type": "Basic",
+    "Speed": 0.005,
+    "Zoom": 45.0,
+    "Pitch": 0.0,
+    "Yaw": -90,
+    "Position": [ 0, 0, 0 ],
+    "Default": false
+  },
+  "Transform": {
+    "Scale": [ 0.1, 0.1, 0.1 ],
+    "Translate": [ 0.0, 0, 0.0 ],
+    "RotationAngles": [ -90.0, 0.0, 0.0 ]
+  },
+  "Audio": {
+
+  }
+}

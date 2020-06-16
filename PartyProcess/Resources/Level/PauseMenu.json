@@ -1,0 +1,76 @@
+{
+  "PauseMenu": [
+    {
+      "DataFile": "Menu",
+      "Name": "Selection",
+      "Children": [
+        {
+          "Name": "Button1",
+          "DataFile": "UI",
+          "UIComponent": {
+            "Type": "Button",
+            "Label": "Resume",
+            "Action": ""
+          },
+          "Transform": {
+            "Translate": [ 0.425, 0.125, 0.0 ],
+            "Scale": [ 0.15, 0.07, 0.0 ]
+          },
+          "ModelComponent": {
+            "Material": "ResumeButton"
+          }
+        },
+        {
+          "Name": "Button2",
+          "DataFile": "UI",
+          "UIComponent": {
+            "Type": "Button",
+            "Label": "Map",
+            "Action": "MapConfirmation"
+          },
+          "Transform": {
+            "Translate": [ 0.425, 0.25, 0.0 ],
+            "Scale": [ 0.15, 0.07, 0.0 ]
+          },
+          "ModelComponent": {
+            "Material": "MapButton"
+          }
+        },
+        {
+          "Name": "Button3",
+          "DataFile": "UI",
+          "UIComponent": {
+            "Type": "Button",
+            "Label": "Options",
+            "Action": "Options"
+          },
+          "Transform": {
+            "Translate": [ 0.425, 0.375, 0.0 ],
+            "Scale": [ 0.15, 0.07, 0.0 ]
+          },
+          "ModelComponent": {
+            "Material": "OptionsButton"
+          }
+        } ,
+		 {
+          "Name": "Button4",
+          "DataFile": "UI",
+          "UIComponent": {
+            "Type": "Button",
+            "Label": "Controls",
+            "Action": "Controls"
+          },
+          "Transform": {
+            "Translate": [ 0.425, 0.5, 0.0 ],
+            "Scale": [ 0.15, 0.07, 0.0 ]
+          },
+          "ModelComponent": {
+            "Material": "ControlsButton"
+          }
+        }
+
+        
+      ]
+    }
+  ]
+}

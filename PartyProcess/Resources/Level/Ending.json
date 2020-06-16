@@ -1,0 +1,42 @@
+{
+  "Ending": [
+    {
+      "Name": "Text1",
+      "DataFile": "UI",
+      "UIComponent": {
+        "Type": "Image",
+        "Description": "AudioText"
+      },
+      "Transform": {
+        "Translate": [ 0.5, 0.5, 0.0 ],
+        "Scale": [ 0.8, 0.7, 0.0 ]
+      },
+      "ModelComponent": {
+        "Material": "Controls"
+      }
+    },
+    {
+
+      "DataFile": "Menu",
+      "Name": "Options",
+      "Children": [
+        {
+          "Name": "Button1",
+          "DataFile": "UI",
+          "UIComponent": {
+            "Type": "Button",
+            "Label": "Back",
+            "Action": ""
+          },
+          "Transform": {
+            "Translate": [ 0.425, 0.9, 0.0 ],
+            "Scale": [ 0.15, 0.07, 0.0 ]
+          },
+          "ModelComponent": {
+            "Material": "BackButton"
+          }
+        }
+      ]
+    }
+  ]
+}

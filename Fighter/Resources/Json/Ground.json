@@ -1,0 +1,33 @@
+{
+  "Type": "Ground",
+  "Transform": {
+    "Scale": [ 160.0, 3.0, 100.0 ],
+    "Translate": [ 0.0, -2.0, 0.0 ],
+    "RotationAngles": [ 0.0, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "Cube",
+    "Material": "IceFloor",
+    "Renderable": true,
+    "CastsShadow": true
+  },
+  "Body": {
+    "mMass": 0.0,
+    "mPos": 0.0,
+    "mPrevPos": 0.0,
+    "mVel": 0.0,
+    "mAcc": 0.0,
+    "mTotalForce": 0.0,
+    "constantVelocity": 0.0,
+    "applyFriction": true,
+    "isConstantVelocitySet": false,
+    "constrainX": false,
+    "constrainY": false,
+    "mUseGravity": false
+  },
+  "Collider": {
+    "mIsTrigger": false,
+    "mLType": "Box",
+    "mShape": "AABB"
+  }
+}

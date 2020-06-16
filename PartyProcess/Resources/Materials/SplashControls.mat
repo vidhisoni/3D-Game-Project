@@ -1,0 +1,21 @@
+{
+	"AdditiveBlending" : false,
+	"Diffuse" : 
+	[
+		0.8,
+		0.8,
+		0.8,
+		0.0
+	],
+	"DiffuseTexture" : "SplashControls",
+	"NormalMap" : null,
+	"Shader" : null,
+	"Shininess" : 10.0,
+	"Specular" : 
+	[
+		0.3,
+		0.3,
+		0.3
+	],
+	"UseLighting" : false
+}

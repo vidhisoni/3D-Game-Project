@@ -1,0 +1,17 @@
+{
+  "Type": "LoadingScreen",
+  "IsEnabled": true,
+  "Transform": {
+    "Scale": [ 2.0, 2.0, 2.0 ],
+    "Translate": [ 0.0, 0.0, 0.0 ],
+    "RotationAngles": [ 0.0, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "Quad",
+    "Material": "LoadingScreen",
+    "Renderable": false,
+    "CastsShadow": false,
+    "IsBillboard": false,
+    "IgnoreCamera": true
+  }
+}

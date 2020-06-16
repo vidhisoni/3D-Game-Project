@@ -1,0 +1,133 @@
+{
+  "Test": [
+    {
+      "Comment": "............................PLAYER............................",
+      "DataFile": "PlayerObject",
+      "Transform": {
+        "Translate": [ 0.0, 15.0, 0.0 ],
+        "Rescale": [ 0.25, 1.0, 0.25 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Player",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 0.0,
+        "mCoeffDynamicFriction": 0.2,
+        "mApplyFriction": true,
+        "Rescale": [ -1.5, 0.0, -1.5 ]
+      },
+      "Body": {
+        "mUseGravity": true,
+        "mMass": 1.0
+      }
+
+    },
+    {
+      "Comment": "............................LIGHTS............................"
+    },
+    {
+      "DataFile": "SpotLight",
+      "Transform": {
+        "Translate": [ 0.0, 5.0, 0.0 ]
+      }
+    },
+    {
+      "DataFile": "SpotLight",
+      "Transform": {
+        "Translate": [ 0.0, 5.0, 1.0 ]
+      }
+    },
+    {
+      "DataFile": "Light",
+      "Transform": {
+        "Translate": [ 0.0, 1.0, -2.0 ]
+      }
+    },
+    {
+      "DataFile": "DRLight",
+      "Transform": {
+        "Translate": [ 0.0, 5.0, -1.0 ]
+      },
+      "DRLightComponent": {
+        "Direction": [ -1.0, -1.0, -1.0 ]
+      }
+    },
+    {
+      "DataFile": "Skybox"
+    },
+    {
+      "Comment": "------------------3rd person CAMERA",
+      "DataFile": "CameraObject",
+      "Camera": {
+        "IsDefault": true
+      },
+      "Transform": {
+        "Translate": [ 1.0, 3.0, 15.0 ]
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\third_person_cam.py" ]
+      }
+    },
+    {
+      "Comment": "LEVEL CAMERA",
+      "DataFile": "CameraObject",
+      "Camera": {
+        "IsDefault": false
+      },
+      "Transform": {
+        "Translate": [ 1.0, 6.0, 11.0 ]
+      },
+      "ScriptComponent": {
+        "scripts": [ ".\\Resources\\Scripts\\simple_cam_control.py" ]
+      }
+    },
+    {
+      "Comment": "............................ScenarioElements............................"
+    },
+    {
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "NormalTest"
+      },
+      "Transform": {
+        "Scale": [ 3.0, 3.0, 3.0 ],
+        "Translate": [ 0.0, 1.5, 0.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0
+      },
+      "Body": {
+        "mUseGravity": false,
+        "mMass": 0.0
+      }
+    },
+    {
+      "Comment": "............................FLOOR............................",
+      "DataFile": "Cube",
+      "ModelComponent": {
+        "Model": "Cube",
+        "Material": "Ground"
+      },
+      "Transform": {
+        "Scale": [ 1000.0, 2.0, 1000.0 ],
+        "Translate": [ 0.0, -1.0, -0.0 ]
+      },
+      "Collider": {
+        "mIsTrigger": false,
+        "mLType": "Box",
+        "mShape": "AABB",
+        "mCoeffStaticFriction": 1.0,
+        "mCoeffDynamicFriction": 1.0
+      },
+      "Body": {
+        "mUseGravity": false,
+        "mMass": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "Type": "PlayerObject",
+  "Transform": {
+    "Scale": [ 6.0, 6.0, 6.0 ],
+    "Translate": [ 0.0, 0.0, 0.0 ],
+    "RotationAngles": [ -90, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "hover_car",
+    "Renderable": true,
+    "CastsShadow": true
+  },
+  "Body": {
+    "mPos": 0.0,
+    "mPrevPos": 0.0,
+    "mVel": 0.0,
+    "mAcc": 0.0,
+    "mTotalForce": 0.0,
+    "constantVelocity": 0.0,
+    "applyFriction": true,
+    "mMass": 1.0,
+    "isConstantVelocitySet": true,
+    "mConstrainX": false,
+    "mConstrainY": false,
+    "mConstrainZ": false,
+    "mUseGravity": true
+  },
+  "Collider": {
+    "mLType": "Player",
+    "mShape": "AABB",
+    "mIsTrigger": false
+  },
+  "ScriptComponent": {
+    "scripts": [ ".\\Resources\\Scripts\\character_control.py" ]
+  },
+  "Controller": {
+    "player": 0
+  },
+  "Player": {
+    "mHitRecharge": 0.2,
+    "mRecharge": 2.0
+  },
+  "Audio": {
+    "mSoundName": ""
+  }
+
+}

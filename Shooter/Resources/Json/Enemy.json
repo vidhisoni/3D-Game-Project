@@ -1,0 +1,70 @@
+{
+  "Type": "Enemy",
+  "Transform": {
+    "Scale": [ 20.0, 20.0, 20.0 ],
+    "Translate": [ 0.0, 10.0, 0.0 ],
+    "RotationAngles": [ 0.0, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "Mannequin",
+    "MeshMaterials": [ "Man0", "Man1", "Man2", "Man3", "Man4", "Man5", "Man6", "Man7", "Man8", "Man9", "Man10", "Man11", "Man12", "Man13", "Man14", "Man15", "Man16", "Man17", "Man18", "Man19", "Man20", "Man21", "Man22", "Man23", "Man24" ],
+    "Renderable": true,
+    "CastsShadow": true
+  },
+  "Animator": {
+    "AffineStates": [
+      {
+        "StateName": "Idle",
+        "AffineAnimationName": "Default",
+        "BlendDuration": 0.3,
+        "ReturnToDefault": true
+      },
+      {
+        "StateName": "Jump",
+        "AffineAnimationName": "Default",
+        "BlendDuration": 0.3,
+        "ReturnToDefault": true
+      },
+      {
+        "StateName": "Left",
+        "AffineAnimationName": "Turn",
+        "BlendDuration": 1.0,
+        "ReturnToDefault": true
+      },
+      {
+        "StateName": "Walk",
+        "AffineAnimationName": "Default",
+        "BlendDuration": 1.0,
+        "ReturnToDefault": true
+      }
+    ],
+    "DefaultAffineState": "Idle",
+    "SkeletalStates": [
+      {
+        "StateName": "Idle",
+        "SkeletalAnimationName": "idle",
+        "BlendDuration": 0.3,
+        "ReturnToDefault": true
+      },
+      {
+        "StateName": "Jump",
+        "SkeletalAnimationName": "jump",
+        "BlendDuration": 0.3,
+        "ReturnToDefault": true
+      },
+      {
+        "StateName": "Left",
+        "SkeletalAnimationName": "left_turn_90",
+        "BlendDuration": 1.0,
+        "ReturnToDefault": true
+      },
+      {
+        "StateName": "Walk",
+        "SkeletalAnimationName": "walking",
+        "BlendDuration": 1.0,
+        "ReturnToDefault": true
+      }
+    ],
+    "DefaultSkeletalState": "Idle"
+  }
+}

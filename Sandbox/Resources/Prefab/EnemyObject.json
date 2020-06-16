@@ -1,0 +1,45 @@
+{
+  "Type": "EnemyObject",
+  "Transform": {
+    "Scale": [ 1.0, 3.0, 1.0 ],
+    "Translate": [ 0.0, 0.0, 0.0 ],
+    "RotationAngles": [ 0.0, 0.0, 0.0 ]
+  },
+  "ModelComponent": {
+    "Model": "Cube",
+    "MeshMaterials": [ "Blue" ],
+    "Renderable": true,
+    "CastsShadow": true
+  },
+  "Body": {
+    "mPos": 0.0,
+    "mPrevPos": 0.0,
+    "mVel": 0.0,
+    "mAcc": 0.0,
+    "mTotalForce": 0.0,
+    "constantVelocity": 200.0,
+    "applyFriction": true,
+    "mMass": 1.0,
+    "isConstantVelocitySet": true,
+    "mConstrainX": false,
+    "mConstrainY": false,
+    "mConstrainZ": false,
+    "mUseGravity": false
+  },
+  "Collider": {
+    "mLType": "Enemy",
+    "mShape": "AABB",
+    "Offset": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "mCoeffStaticFriction": 0.0,
+    "mCoeffDynamicFriction": 0.2,
+    "mApplyFriction": true
+  },
+  "Enemy": {},
+  "ScriptComponent": {
+    "scripts": [ ".\\Resources\\Scripts\\enemy_Script.py" ]
+  }
+}
